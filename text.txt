@@ -1,0 +1,249 @@
+========== HEADER ========== 
+.logo
+Miller
+
+.nav-link
+Home
+Services
+Skills
+Works
+Resume
+Testimonials
+Contact
+
+.social-link
+https://x.com/
+https://dribbble.com/
+https://behance.com/
+
+
+========== HOME ==========
+.home-subtitle
+Hello, My Name is
+
+.home-title
+Zoé Miller
+
+.home-job
+Freelance Designer & Developer
+
+.home-data-no | .home-data-title
+12 +
+Years of Experience
+
+330
+Completed Projects
+
+.home-description
+I am from Paris, France. I have rich experience in web design and am skilled in WordPress. I love discussing what makes us unique.
+
+.button
+Download CV
+My Skills
+
+
+========== SERVICES ==========
+.section-title
+What I Do
+
+.section-subtitle
+My Services
+
+.services-subtitle | .services-title | .services-description
+Web Development
+Web Design & Logo
+Web designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company, or Personal.
+
+Apps Development
+iOS & Android
+Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.
+
+Game Development
+Unity & Unreal Engine
+Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games.
+
+Advertising
+Google Ads
+Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program.
+
+Music Writing
+Sound Track
+Music copying, writing, creating, transcription and composition services.
+
+
+========== SKILLS ==========
+.section-title
+Professional Skills
+
+.section-subtitle
+My Talent
+
+.skills-description
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+.skills-name | .skills-value
+PHP
+85%
+
+JavaScript
+75
+
+WordPress
+90
+
+Python
+75
+
+React
+70
+
+Adobe XD
+80
+
+
+========== WORK ==========
+.section-title
+Portfolio
+
+.section-subtitle
+My Cases
+
+.work-item
+All
+Photography
+Development
+Branding
+
+.work-description
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+
+.work-category | .work-title
+Branding
+Zorro
+
+Development
+Explore
+
+Photography
+Mozar
+
+Photography
+Gooir
+
+Development
+Stay Fit
+
+Branding
+Kana
+
+
+========== RESUME ==========
+.section-title
+Resume
+
+.section-subtitle
+My Story
+
+.resume-title
+Education
+
+.resume-description
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+.resume-header-title | .resume-content-title | .resume-date
+CoderHouse Courses
+Backend Programming
+2014 - 2016
+
+Lviv National Academy of Arts
+Faculty of Design
+2012 - 2014
+
+IT Future
+High School
+2010 - 2012
+
+.resume-title
+Experience
+
+.resume-header-title | .resume-content-title | .resume-date
+UI Head & Manager
+Soft Tech Inc.
+2020 - Present
+
+UI / UX Specialist
+Kana Design Studio
+2018 - 2020
+
+Plugins Developer
+Fiverr.com
+2016 - 2018
+
+
+========== TESTIMONIALS ==========
+.section-title
+Testimonials
+
+.section-subtitle
+My Customers Say
+
+.testimonial-description
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+.services-subtitle | .services-title | .services-description
+Barbara Wilson
+CEO Company
+
+Charlie Smith
+Designer
+
+Roy Wang
+Manager GYM
+
+Jennifer Smith
+CEO & Founder
+
+Paul Freeman
+Photographer
+
+
+========== CONTACT ==========
+.section-title
+Contact Me
+
+.section-subtitle
+Let's Talk About Ideas
+
+.contact-title | .contact-data
+Address
+North Tower, Toronto, Canada
+
+Freelance
+Available Right Now
+
+Email
+zoe.miller@gmail.com
+
+Phone
++1 900 - 900 - 9000
+
+.contact-form-tag
+Your full Name *
+Your Email Address
+Your Subject
+Your Message
+
+.contact-submit span
+* Accept the terms and conditions.
+
+
+========== FOOTER ==========
+.footer-copyright
+© 2024 <span>Miller</span>. All Rights Reserved
+Developed by <span>Sajid</span>
+
+
+* EMAIL JS *
+Write all the input fields
+Message sent ✔
+OOPs! SOMETHING WENT WRONG...
