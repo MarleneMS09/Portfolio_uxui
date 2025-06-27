@@ -620,3 +620,97 @@ bottom: 12px;
 .show-switcher {
     right: 0;
 }
+
+/* ============================ LOGOS SPEAKING ================================ */
+
+
+.logo-section {
+  background-color: transparent;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  flex-wrap: nowrap;
+  padding: 0 2rem;
+}
+
+.logo-box {
+  width: 120px;
+  aspect-ratio: 7 / 5; /* o 3/2 si te gusta más rectangular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.logo-img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 1200px) {
+  .logo-grid {
+    gap: 5rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem 4rem;
+  }
+
+  .logo-box {
+    width: 100px;
+    aspect-ratio: 5 / 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-grid {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .logo-box {
+    width: 80px;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .logo-box {
+    width: 60px;
+    aspect-ratio: 1 / 1;
+  }
+}
