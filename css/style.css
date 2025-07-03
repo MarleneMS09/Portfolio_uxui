@@ -81,6 +81,12 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 body,
 button,
 input,
@@ -126,9 +132,13 @@ textarea {
 
 /* ==================== REUSABLE CSS CLASSES ===================== */
 
+
+
 .social-links {
     display: inline-flex;
     column-gap: 1.25rem;
+    
+    
 }
 
 .social-link {
@@ -584,7 +594,52 @@ bottom: 12px;
   padding-top: 8rem;
   padding-bottom: 10rem;
 }
-/* sWIPER */
+
+/* Swiper */
+
+.swiper-pagination {
+    position: initial;
+    margin-top: 3rem;
+}
+
+.swiper-pagination-bullets::before {
+     content: '';
+     position: absolute;
+     top: 0.55rem;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 60px;
+     height: 2px;
+     background-color: var(--border-color);
+}
+
+
+.swiper-pagination-bullet {
+    border: 2px solid var(--border-color);
+    background-color: var(--container-color);
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.3s var(--transition);
+}
+
+.swiper-pagination-bullet:not(:last-child) {
+    margin-right: 1.25rem !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+    transform: scale(1.7);
+    border-width: 1px;
+}
+
+
+
+
+
+
+
+
 
 /* ====================== SKILLS ============================== */
 
@@ -707,7 +762,7 @@ bottom: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 5rem;
   flex-wrap: nowrap;
   padding: 0 2rem;
 }
