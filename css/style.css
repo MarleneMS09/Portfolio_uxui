@@ -44,8 +44,17 @@
  --transition: cubic-bezier(0.3, 0, 0.3, 1);
 
  /* Responsive typography */
- @media screen and (max-widht: 102px) {
-
+ @media screen and (max-widht: 1024px) {
+    :root { 
+--big-font-size: 3rem;
+--h1-font-size: 2rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1.125rem;
+--larger-font-size:1.125rem;
+--large-font-size: 1rem;
+--normal-font-size: 0.938rem;
+--small-font-size: 0.812rem;
+    }
  }
 
 }
@@ -200,7 +209,7 @@ textarea {
 .section-title {
   font-size: var(--h1-font-size);
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4.25rem;
 }
 
 .section-title::after {
@@ -244,6 +253,9 @@ textarea {
     padding-inline: 1.5rem;
 }
 
+.grid {
+    display: grid;
+}
 
 /* ==================== HEADER & NAV ===================== */
 
@@ -257,12 +269,19 @@ textarea {
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 5rem;
-    max-width: 1540px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  max-width: 1540px;
+  margin-inline: auto; /* para centrar */
+  padding: 0 1.5rem; /* opcional, espaciado interno */
+  background-color: var(--body-color); /* evita que se vea transparente al hacer scroll */
 }
+
 
 .nav-logo,
 .nav-link {
@@ -634,14 +653,141 @@ bottom: 12px;
 }
 
 
-
-
-
-
-
-
-
 /* ====================== SKILLS ============================== */
+.skills.section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+.section-title::before {
+  content: '';
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.skills-description {
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.skill-card {
+  background-color: var(--container-color);
+  padding: 1.8rem;
+  width: 140px;
+  height: 140px;
+  border-radius: 0.75rem;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15), 
+              -2px -2px 10px rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-card img {
+  width: 56px; 
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 0.6rem;
+  filter: brightness(1.2);
+}
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;       
+  margin-bottom: 1rem;
+}
+
+.skill-card span {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--title-color);
+}
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.2), 
+              -3px -3px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Tablet y móviles grandes (≤768px) */
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .skill-card {
+    width: 120px;
+    height: 120px;
+    padding: 1.2rem;
+    border-radius: 0.7rem;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.15),
+                -2px -2px 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .skill-card img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-card span {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile pequeño (≤576px) */
+@media screen and (max-width: 576px) {
+  .skills-grid {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .skill-card {
+    width: 100px;
+    height: 100px;
+    padding: 0.9rem;
+    border-radius: 0.65rem;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15),
+                -2px -2px 8px rgba(255, 255, 255, 0.2);
+  }
+
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-card span {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+
+
+
 
 
 /* ====================== WORK ============================== */
@@ -755,7 +901,8 @@ bottom: 12px;
 .logo-section {
   background-color: transparent;
   padding: 0.5rem 0;
-  margin-top: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .logo-grid {
@@ -806,7 +953,7 @@ bottom: 12px;
 @media (max-width: 1200px) {
   .logo-grid {
     gap: 5rem;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
   }
 }
 
@@ -824,9 +971,9 @@ bottom: 12px;
 }
 
 @media (max-width: 768px) {
-  .logo-grid {
-    gap: 2rem;
-    padding: 0 1rem;
+.logo-section {
+    margin-top: 2rem;  
+    padding: 0.5rem 0;
   }
 
   .logo-box {
@@ -848,3 +995,204 @@ bottom: 12px;
 }
 
 
+
+/* ======================= BREAKPOINTS ====================================  */
+
+
+@media screen and (max-width: 1200px) {
+    .section-deco:not(.header-deco) {
+        display: none;
+    }
+    .home-banner {
+        position: relative;
+        right: initial;
+        top: initial;
+        transform: translateY(0);
+        width: max-content;
+    }
+    .home-content {
+        text-align: center;
+    
+    }
+    .home-banner,
+    .home-description,
+    .home-socials,
+    .home-btns {
+    margin-inline: auto;
+    }
+
+    .home-banner {
+        margin-block: 2.5rem;
+    }
+    
+    .home-data {
+        transform: scale(0.9);
+    }
+
+    .home-btns {
+        flex-direction: column;
+        row-gap: 3.75rem;
+    }
+
+    .home-link::before{
+        top: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 40px;
+    }
+
+    .services-swiper,
+    .testimonials-swiper {
+        max-width: 900px;
+    }
+
+    .swiper-pagination-bullets::before {
+        width: 90px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1frw);
+    }
+    .work-container {
+        grid-template-columns: repeat(2, fit-content(434px));
+        justify-content: center;
+    }
+     .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1.5rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav { 
+        height: 4rem;
+    }
+    .section {
+        padding-block: 6rem 1rem;
+    }
+    .home-container{
+        padding-block: 2rem;
+    }
+    .home-title{
+        text-shadow: 2px 2px var(--shadow-color);
+    }
+    .home-data {
+        transform: scale(0.8);
+    }
+    .swiper-pagination-bullets::before {
+        top:11.5px
+    }
+    .resume-container{
+        grid-template-columns: fit-content(550px);
+        justify-content: center;
+        row-gap: 2.5rem;
+    }
+    .contact-container, 
+    .contact-form-group {
+        grid-template-columns: 1fr;
+    }
+    .contact-container {
+        row-gap: 1.5rem;
+    }
+    .contact-form,
+    .contact-content {
+        max-width: 550px;
+        width: 100%;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu,
+    .style-switcher{
+        width: 100%;
+    }
+    .nav-buttons {
+        column-gap: 1.5rem;
+    }
+    .home-data{
+        transform: scale(0.7);
+    }
+
+    .services-swiper,
+    .testimonials-swiper{
+        max-width: 420px;
+    }
+
+    .swiper-pagination-bullets::before{
+        width: 120px;
+        margin-top: -2px;
+    }
+    .skills-container{
+        grid-template-columns: fit-content(550px);
+     }
+
+     .skills-container,
+     .work-container {
+        justify-content: center;
+     }
+
+    .work-list{
+        column-gap: 2rem;
+    }
+    .work-container{
+        grid-template-columns: fit-content(420px);
+    }
+
+    .footer-container{
+        flex-direction: column;
+        row-gap: 1.25rem;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        padding-inline: 1.25rem;
+    }
+    .nav-buttons{
+        column-gap: 1-25rem;
+    }
+    .nav-menu{
+        padding-left: 7rem;
+    }
+    .header-deco{
+        left:56px;
+    }
+    .home-data{
+      transform: scale(0.6);
+    }
+    .skills-container{
+        row-gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-menu{
+        padding-left: 6rem;
+    }
+
+    .header-deco{
+        left: 40px;
+    }
+
+    .home-banner,
+    .home-img-wrapper {
+        width: 100%;
+    }
+
+    .home-data{
+        transform: scale(0.5);
+    }
+}
