@@ -213,7 +213,7 @@ textarea {
 .section-title {
   font-size: var(--h1-font-size);
   text-align: center;
-  margin-bottom: 4.25rem;
+  margin-bottom: 3.25rem;
 }
 
 .section-title::after {
@@ -662,12 +662,7 @@ bottom: 12px;
   padding: 4rem 1rem;
   text-align: center;
 }
-.section-title {
-  position: relative;
-  font-size: var(--h2-font-size);
-  margin-bottom: 1rem;
-  color: var(--title-color);
-}
+
 .section-title::before {
   content: '';
   display: block;
@@ -820,7 +815,8 @@ bottom: 12px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem 2.5rem;
-  margin-bottom: 3.75rem;
+  margin-bottom: 2.55rem;
+  margin-top: 2.35rem;
 }
 
 .work-item {
