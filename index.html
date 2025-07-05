@@ -1,496 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
 
-    <!--============================= REMIXICON ======================--->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
 
-    <!--============================= SWIPER CSS ======================--->
+  <!--============================= REMIXICON ======================--->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!--============================= SWIPER CSS ======================--->
 
-    <!--============================= CSS ======================--->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!--============================= HEADER ======================--->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <header class="header">
-      <nav class="nav container">
-        <a href="#" class="nav-logo">VMS</a>
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Works</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-          </ul>
-          <div class="social-links">
-            <a
-              href="https://www.linkedin.com/in/vanessamarlenemsanchez/"
-              target="_blank"
-              class="social-link"
-            >
+  <!--============================= CSS ======================--->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!--============================= HEADER ======================--->
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">VMS</a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/vanessamarlenemsanchez/" target="_blank" class="social-link">
+            <i class="ri-linkedin-line"></i>
+          </a>
+          <a href="https://x.com/VMarleneMSchez" target="_blank" class="social-link">
+            <i class="ri-twitter-x-fill"></i>
+          </a>
+          <a href="https://www.notion.so/Design-Journal-Vanessa-Marlene-Morfin-Sanchez-aae95db197b14be398a9ffae67c21d45?source=copy_link"
+            target="_blank" class="social-link">
+            <i class="ri-notion-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav-buttons">
+        <div class="nav-settings" id="switcher-toggle">
+          <i class="ri-settings-3-line"></i>
+        </div>
+        <div class="nav-toggle" id="nav-toggle"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!--============================= MAIN ======================--->
+  <main class="main">
+    <!--============================= HOME ======================--->
+
+    <section class="home-section" id="home">
+      <div class="home-container container">
+        <div class="home-content">
+          <h2 class="home-subtitle">Hello, <span>my name is</span></h2>
+          <h1 class="home-title"><span>Vanessa M</span> Sanchez</h1>
+          <h3 class="home-job">UX/UI Designer, Content Creator & Speaker</h3>
+
+          <div class="home-banner">
+            <div class="home-img-wrapper">
+              <img src="./assets/images/profile.png" alt="" class="home-profile" />
+            </div>
+            <div class="home-data home-data-one">
+              <span class="home-data-no">3+ </span>
+              <h3 class="home-data-title">YEARS OF EXPERIENCE</h3>
+            </div>
+            <div class="home-data home-data-two">
+              <span class="home-data-no">12+</span>
+              <h3 class="home-data-title">PUBLIC <span> TALKS </span></h3>
+            </div>
+            <img src="assets/images/shape-1.png" alt="" class="shape shape-1" />
+            <img src="assets/images/shape-2.png" alt="" class="shape shape-2" />
+            <img src="assets/images/shape-3.png" alt="" class="shape shape-3" />
+          </div>
+
+          <p class="home-description">
+            I’m a UX/UI designer, speaker, and content creator on LinkedIn.
+            I’ve shared my experience in design and personal branding at 12+
+            tech events.
+          </p>
+
+          <div class="home-socials social-links">
+            <a href="https://www.linkedin.com/in/vanessamarlenemsanchez/" target="_blank" class="social-link">
               <i class="ri-linkedin-line"></i>
             </a>
-            <a
-              href="https://x.com/VMarleneMSchez"
-              target="_blank"
-              class="social-link"
-            >
+            <a href="https://x.com/VMarleneMSchez" target="_blank" class="social-link">
               <i class="ri-twitter-x-fill"></i>
             </a>
-            <a
-              href="https://www.notion.so/Design-Journal-Vanessa-Marlene-Morfin-Sanchez-aae95db197b14be398a9ffae67c21d45?source=copy_link"
-              target="_blank"
-              class="social-link"
-            >
+            <a href="https://www.notion.so/Design-Journal-Vanessa-Marlene-Morfin-Sanchez-aae95db197b14be398a9ffae67c21d45?source=copy_link"
+              target="_blank" class="social-link">
               <i class="ri-notion-fill"></i>
             </a>
           </div>
-        </div>
-        <div class="nav-buttons">
-          <div class="nav-settings" id="switcher-toggle">
-            <i class="ri-settings-3-line"></i>
-          </div>
-          <div class="nav-toggle" id="nav-toggle"></div>
-        </div>
-      </nav>
-    </header>
 
-    <!--============================= MAIN ======================--->
-    <main class="main">
-      <!--============================= HOME ======================--->
-
-      <section class="home-section" id="home">
-        <div class="home-container container">
-          <div class="home-content">
-            <h2 class="home-subtitle">Hello, <span>my name is</span></h2>
-            <h1 class="home-title"><span>Vanessa M</span> Sanchez</h1>
-            <h3 class="home-job">UX/UI Designer, Content Creator & Speaker</h3>
-
-            <div class="home-banner">
-              <div class="home-img-wrapper">
-                <img
-                  src="./assets/images/profile.png"
-                  alt=""
-                  class="home-profile"
-                />
-              </div>
-              <div class="home-data home-data-one">
-                <span class="home-data-no">3+ </span>
-                <h3 class="home-data-title">YEARS OF EXPERIENCE</h3>
-              </div>
-              <div class="home-data home-data-two">
-                <span class="home-data-no">12+</span>
-                <h3 class="home-data-title">PUBLIC <span> TALKS </span></h3>
-              </div>
-              <img
-                src="assets/images/shape-1.png"
-                alt=""
-                class="shape shape-1"
-              />
-              <img
-                src="assets/images/shape-2.png"
-                alt=""
-                class="shape shape-2"
-              />
-              <img
-                src="assets/images/shape-3.png"
-                alt=""
-                class="shape shape-3"
-              />
-            </div>
-
-            <p class="home-description">
-              I’m a UX/UI designer, speaker, and content creator on LinkedIn.
-              I’ve shared my experience in design and personal branding at 12+
-              tech events.
-            </p>
-
-            <div class="home-socials social-links">
-              <a
-                href="https://www.linkedin.com/in/vanessamarlenemsanchez/"
-                target="_blank"
-                class="social-link"
-              >
-                <i class="ri-linkedin-line"></i>
-              </a>
-              <a
-                href="https://x.com/VMarleneMSchez"
-                target="_blank"
-                class="social-link"
-              >
-                <i class="ri-twitter-x-fill"></i>
-              </a>
-              <a
-                href="https://www.notion.so/Design-Journal-Vanessa-Marlene-Morfin-Sanchez-aae95db197b14be398a9ffae67c21d45?source=copy_link"
-                target="_blank"
-                class="social-link"
-              >
-                <i class="ri-notion-fill"></i>
-              </a>
-            </div>
-
-            <div class="home home-btns">
-              <a download="" href="pdf/cv_vmms_2025.pdf" class="btn">
-                Download CV</a
-              >
-              <a href="#" class="home-link">My Skills</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================== LOGOS ============================   -->
-      <div class="logo-section">
-        <div class="logo-grid">
-          <div class="logo-box">
-            <img
-              src="assets/images/linkedinnoticias.svg"
-              alt="LinkedIn Noticias"
-              class="logo-img"
-            />
-          </div>
-          <div class="logo-box">
-            <img src="assets/images/awoman.svg" alt="AWOMAN" class="logo-img" />
-          </div>
-          <div class="logo-box">
-            <img
-              src="assets/images/unadcolombia.svg"
-              alt="UNAD"
-              class="logo-img"
-            />
-          </div>
-
-          <!-- Logo central más destacado -->
-          <div class="logo-box logo-center">
-            <img
-              src="assets/images/incmty.svg"
-              alt="INC MTY"
-              class="logo-img"
-            />
-          </div>
-
-          <div class="logo-box">
-            <img
-              src="assets/images/mujerdigital.svg"
-              alt="Mujer Digital"
-              class="logo-img"
-            />
-          </div>
-          <div class="logo-box">
-            <img
-              src="assets/images/favikon.svg"
-              alt="Favikon"
-              class="logo-img"
-            />
+          <div class="home home-btns">
+            <a download="" href="pdf/cv_vmms_2025.pdf" class="btn">
+              Download CV</a>
+            <a href="#" class="home-link">My Skills</a>
           </div>
         </div>
       </div>
+    </section>
 
-      <!--============================= SERVICES ======================-->
+    <!-- ===================== LOGOS ============================   -->
+    <div class="logo-section">
+      <div class="logo-grid">
+        <div class="logo-box">
+          <img src="assets/images/linkedinnoticias.svg" alt="LinkedIn Noticias" class="logo-img" />
+        </div>
+        <div class="logo-box">
+          <img src="assets/images/unadcolombia.svg" alt="UNAD" class="logo-img" />
+        </div>
+        <div class="logo-box">
+          <img src="assets/images/awoman.svg" alt="AWOMAN" class="logo-img" />
+        </div>
+        <!-- Logo central más destacado -->
+        <div class="logo-box logo-center">
+          <img src="assets/images/incmty.svg" alt="INC MTY" class="logo-img" />
+        </div>
 
-      <section class="services-section" id="services">
-        <h2 class="section-title" data-title="My Services">What I Do</h2>
-        <div class="container">
-          <div class="swiper services-swiper">
-            <div class="swiper-wrapper">
-              <!-- UX/UI -->
-              <div class="swiper-slide card">
-                <h4 class="services-subtitle">UX/UI Design</h4>
-                <h3 class="services-title">Human-centered interfaces</h3>
-                <p class="services-description">
-                  I design intuitive and accessible digital products for
-                  education, e-commerce, and tech. From wireframes to scalable
-                  UIs, I follow usability and WCAG standards.
-                  <br /><br />
-                  Ideal for startups, growing platforms, or redesigns.
-                </p>
-                <a href="#" class="link">
-                  See Pricing <i class="ri-arrow-right-line link-icon"></i>
-                </a>
-              </div>
+        <div class="logo-box">
+          <img src="assets/images/mujerdigital.svg" alt="Mujer Digital" class="logo-img" />
+        </div>
+        <div class="logo-box">
+          <img src="assets/images/favikon.svg" alt="Favikon" class="logo-img" />
+        </div>
+      </div>
+    </div>
 
-              <!-- Public Speaking -->
-              <div class="swiper-slide card">
-                <h4 class="services-subtitle">Public Speaking</h4>
-                <h3 class="services-title">Keynotes & Tech Talks</h3>
-                <p class="services-description">
-                  I deliver inspiring and practical talks about UX/UI, career
-                  growth, and personal branding in tech. With experience in +12
-                  events across LATAM, I turn ideas into memorable experiences.
-                  <br /><br />
-                  Ideal for tech events, educational panels, and company
-                  keynotes.
-                </p>
-                <a href="#" class="link">
-                  See Pricing <i class="ri-arrow-right-line link-icon"></i>
-                </a>
-              </div>
+    <!--============================= SERVICES ======================-->
 
-              <!-- Mentorship -->
-              <div class="swiper-slide card">
-                <h4 class="services-subtitle">Mentorship & Trainings</h4>
-                <h3 class="services-title">Learning Workshops</h3>
-                <p class="services-description">
-                  I guide professionals and creators to grow on LinkedIn,
-                  combining practical tools, mindset shifts, and clear
-                  strategies to help them thrive.
-                  <br /><br />
-                  Ideal for bootcamps, tech teams, or creators in transition.
-                </p>
-                <a href="#" class="link">
-                  See Pricing <i class="ri-arrow-right-line link-icon"></i>
-                </a>
-              </div>
-
-              <!-- Content Strategy -->
-              <div class="swiper-slide card">
-                <h4 class="services-subtitle">LinkedIn Content Creation</h4>
-                <h3 class="services-title">LinkedIn Content Creation</h3>
-                <p class="services-description">
-                  I help professionals and teams create impactful content on
-                  LinkedIn. From building content pillars to structuring posts,
-                  I guide the process to increase visibility and engagement.
-                  <br /><br />
-                  Ideal for personal brands, tech teams, and growing companies.
-                </p>
-                <a href="#" class="link">
-                  See Pricing <i class="ri-arrow-right-line link-icon"></i>
-                </a>
-              </div>
-
-              <!-- Branding & Storytelling -->
-              <div class="swiper-slide card">
-                <h4 class="services-subtitle">Personal Branding</h4>
-                <h3 class="services-title">Storytelling & Visibility</h3>
-                <p class="services-description">
-                  I teach professionals how to build a strong personal brand
-                  through storytelling, digital presence, and confident public
-                  speaking. I also create custom content packages to enhance
-                  their visibility online.
-                  <br /><br />
-                  Ideal for creators, job seekers, and future speakers.
-                </p>
-                <a href="#" class="link">
-                  See Pricing <i class="ri-arrow-right-line link-icon"></i>
-                </a>
-              </div>
+    <section class="services-section" id="services">
+      <h2 class="section-title" data-title="My Services">What I Do</h2>
+      <div class="container">
+        <div class="swiper services-swiper">
+          <div class="swiper-wrapper">
+            <!-- UX/UI -->
+            <div class="swiper-slide card">
+              <h4 class="services-subtitle">UX/UI Design</h4>
+              <h3 class="services-title">Human-centered interfaces</h3>
+              <p class="services-description">
+                I design intuitive and accessible digital products for
+                education, e-commerce, and tech. From wireframes to scalable
+                UIs, I follow usability and WCAG standards.
+                <br /><br />
+                Ideal for startups, growing platforms, or redesigns.
+              </p>
+              <a href="#" class="link">
+                See Pricing <i class="ri-arrow-right-line link-icon"></i>
+              </a>
             </div>
 
-            <!-- Pagination dots -->
-            <div class="swiper-pagination-wrapper">
-    <div class="swiper-pagination"></div>
+            <!-- Public Speaking -->
+            <div class="swiper-slide card">
+              <h4 class="services-subtitle">Public Speaking</h4>
+              <h3 class="services-title">Keynotes & Tech Talks</h3>
+              <p class="services-description">
+                I deliver inspiring and practical talks about UX/UI, career
+                growth, and personal branding in tech. With experience in +12
+                events across LATAM, I turn ideas into memorable experiences.
+                <br /><br />
+                Ideal for tech events, educational panels, and company
+                keynotes.
+              </p>
+              <a href="#" class="link">
+                See Pricing <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+
+            <!-- Mentorship -->
+            <div class="swiper-slide card">
+              <h4 class="services-subtitle">Mentorship & Trainings</h4>
+              <h3 class="services-title">Learning Workshops</h3>
+              <p class="services-description">
+                I guide professionals and creators to grow on LinkedIn,
+                combining practical tools, mindset shifts, and clear
+                strategies to help them thrive.
+                <br /><br />
+                Ideal for bootcamps, tech teams, or creators in transition.
+              </p>
+              <a href="#" class="link">
+                See Pricing <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+
+            <!-- Content Strategy -->
+            <div class="swiper-slide card">
+              <h4 class="services-subtitle">LinkedIn Content Creation</h4>
+              <h3 class="services-title">LinkedIn Content Creation</h3>
+              <p class="services-description">
+                I help professionals and teams create impactful content on
+                LinkedIn. From building content pillars to structuring posts,
+                I guide the process to increase visibility and engagement.
+                <br /><br />
+                Ideal for personal brands, tech teams, and growing companies.
+              </p>
+              <a href="#" class="link">
+                See Pricing <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+
+            <!-- Branding & Storytelling -->
+            <div class="swiper-slide card">
+              <h4 class="services-subtitle">Personal Branding</h4>
+              <h3 class="services-title">Storytelling & Visibility</h3>
+              <p class="services-description">
+                I teach professionals how to build a strong personal brand
+                through storytelling, digital presence, and confident public
+                speaking. I also create custom content packages to enhance
+                their visibility online.
+                <br /><br />
+                Ideal for creators, job seekers, and future speakers.
+              </p>
+              <a href="#" class="link">
+                See Pricing <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pagination dots -->
+          <div class="swiper-pagination-wrapper">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============================= SKILLS ======================--->
+
+
+    <section class="skills section" id="skills">
+      <h2 class="section-title" data-title="My Talent">Professional Skills</h2>
+
+      <p class="skills-description">
+        I design and build digital products using modern tools and technologies.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="./assets/images/html55.webp" alt="HTML icon" />
+          </div>
+          <span>HTML5</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="./assets/images/css3.webp" alt="CSS icon" />
+          </div>
+          <span>CSS3</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="./assets/images/javascript.webp" alt="JavaScript icon" />
+          </div>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="./assets/images/logoadobexd.webp" alt="Adobe XD icon" />
+          </div>
+          <span>Adobe XD</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="./assets/images/Figma-Logov.webp" alt="Figma icon" />
+          </div>
+          <span>Figma</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="./assets/images/firebase.webp" alt="Firebase icon" />
+          </div>
+          <span>Firebase</span>
+        </div>
+      </div>
+    </section>
+
+    <!--============================= WORK ======================--->
+
+    <section class="work section">
+      <h2 class="section-title" data-title="My Cases">Portfolio</h2>
+      <div class="container">
+        <ul class="work-list">
+  <li class="work-item active-work" data-filter="all">All</li>
+
+  <li class="work-item" data-filter=".clientprojects">Client Projects</li>
+  <li class="work-item" data-filter=".uxui">UX/UI</li>
+  <li class="work-item" data-filter=".strategicredesigns">Strategic Redesigns</li>
+  <li class="work-item" data-filter=".visualdevelopment">Visual Development</li>
+</ul>
+
+        <div class="work-container grid">
+
+          <!-- 1. ADA -->
+          <div class="mix clientprojects">
+            <div class="card">
+              <img src="assets/images/project1.jpeg" alt="imgproject1" class="work-img">
+              <h4 class="work-category">Client Project</h4>
+              <h3 class="work-title">ADA- Multilevel Educational Platform </h3>
+              <p class="work-description"> Complete UX/UI design for an editorial platform used across primary, middle,
+                and high school levels.
+                Designed for teachers, students, and editorial teams, the platform includes user segmentation,
+                accessible navigation architecture,
+                and a scalable visual system aligned with educational needs.</p>
+              <a href="#" class="link">
+                View project <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+          </div>
+          <!-- 2. Vogue -->
+          <div class="mix strategicredesigns">
+            <div class="card">
+              <img src="assets/images/project2.jpg" alt="imgproject2" class="work-img">
+              <h4 class="work-category">Strategic Redesigns</h4>
+              <h3 class="work-title"> Vogue- A modern Editorial Experience</h3>
+              <p class="work-description">Conceptual redesign of Vogue’s digital platform. Focused on content hierarchy,
+                mobile usability,
+                and a visually elegant interface aligned with high-end editorial standards.</p>
+              <a href="#" class="link">
+                View Project <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+          </div>
+          <!-- 3. IntraCorp -->
+          <div class="mix clientprojects">
+            <div class="card">
+              <img src="assets/images/project3.jpeg" alt="imgproject3" class="work-img">
+              <h4 class="work-category">Client Project</h4>
+              <h3 class="work-title">IntraCorp - Logistics Dasboard Redesign</h3>
+              <p class="work-description"> UX/UI redesign of an internal dashboard used for logistics operations.
+                The project focused on usability improvements, UI scalability, and accessible visual patterns for
+                real-time tracking.</p>
+              <a href="#" class="link">
+                See Pricing <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+          </div>
+          <!-- 4. GlowWear -->
+          <div class="mix visualdevelopment">
+            <div class="card">
+              <img src="assets/images/project4.jpeg" alt="imgproject4" class="work-img">
+              <h4 class="work-category">Visual Development</h4>
+              <h3 class="work-title">GlowWear - Responsive Mini E-commerce</h3>
+              <p class="work-description"> Front-end responsive fashion store built with HTML/CSS.
+                Mobile-first layout, product grid, and clean styling focused on a smooth shopping experience.</p>
+              <a href="#" class="link">
+                View Project <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+          </div>
+          <!-- 5. McDonald's App Redesign -->
+          <div class="mix strategicredesigns">
+            <div class="card">
+              <img src="assets/images/project5.jpg" alt="imgproject5" class="work-img">
+              <h4 class="work-category">Strategic Redesigns</h4>
+              <h3 class="work-title">McDonald’s - Streamlined Ordering Experience</h3>
+              <p class="work-description">
+                Conceptual redesign of the McDonald’s mobile app focused on simplifying the food ordering flow,
+                reducing cognitive load, and improving accessibility. The design leverages user behavior research
+                to optimize task completion, enhance visual clarity, and align the experience with fast-paced
+                lifestyles.
+              </p>
+              <a href="#" class="link">
+                View Project <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Learn Space -->
+          <div class="mix uxui">
+            <div class="card">
+              <img src="assets/images/project6.jpg" alt="imgproject6" class="work-img">
+              <h4 class="work-category">UX/UI</h4>
+              <h3 class="work-title">Learn Space - Modular Self-Learning Platform</h3>
+              <p class="work-description"> Original UX/UI design of a modular self-learning platform. Includes
+                onboarding flows, course browsing,
+                and a visual system adapted to autonomous learning experiences.</p>
+              <a href="#" class="link">
+                View Project <i class="ri-arrow-right-line link-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!--============================= RESUME ======================--->
+
+    <!--============================= TESTIMONIALS ======================--->
+
+    <!--============================= CONTACT ======================--->
+  </main>
+
+  <!--============================= FOOTER ======================--->
+
+  <!--============================= STYLE SWITCHER ======================--->
+
+  <div class="style-switcher" id="style-switcher">
+    <h2 class="style-switcher-title">Style Switcher</h2>
+    <div class="style-switcher-item">
+      <h3 class="style-switcher-subtitle">Colors</h3>
+      <div class="style-switcher-colors">
+        <span class="style-switcher-color active-color" style="--hue: 259">
+          <i class="ri-check-line"></i>
+        </span>
+        <span class="style-switcher-color" style="--hue: 165"> </span>
+        <span class="style-switcher-color" style="--hue: 345">
+          <i class="ri-check-line"></i>
+        </span>
+        <span class="style-switcher-color" style="--hue: 65">
+          <i class="ri-check-line"></i>
+        </span>
+        <span class="style-switcher-color" style="--hue: 15">
+          <i class="ri-check-line"></i>
+        </span>
+      </div>
+    </div>
+    <div class="style-switcher-item">
+      <h3 class="style-switcher-subtitle">Theme</h3>
+      <div class="style-switcher-themes">
+        <div class="style-switcher-theme">
+          <input type="radio" class="style-switcher-input" name="body-theme" value="light" checked="true"
+            id="light-theme" />
+          <label for="light-theme" class="style-switcher-label">Light</label>
+        </div>
+        <div class="style-switcher-theme">
+          <input type="radio" class="style-switcher-input" name="body-theme" value="dark" checked="false"
+            id="dark-theme" />
+          <label for="dark-theme" class="style-switcher-label">Dark</label>
+        </div>
+      </div>
+    </div>
+    <div class="style-switcher-close" id="switcher-close">
+      <i class="ri-close-line"></i>
+    </div>
   </div>
-          </div>
-        </div>
-      </section>
 
-      <!--============================= SKILLS ======================--->
+  <!--============================= SWIPER JS ======================--->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
-<section class="skills section" id="skills">
-  <h2 class="section-title" data-title="My Talent">Professional Skills</h2>
+  <!--============================= EMAIL JS ======================--->
 
-  <p class="skills-description">
-    I design and build digital products using modern tools and technologies.
-  </p>
+  <!--============================= JS ======================--->
+<script src="js/main.js"></script>
 
-  <div class="skills-grid">
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="./assets/images/html55.webp" alt="HTML icon" />
-      </div>
-      <span>HTML5</span>
-    </div>
+</body>
 
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="./assets/images/css3.webp" alt="CSS icon" />
-      </div>
-      <span>CSS3</span>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="./assets/images/javascript.webp" alt="JavaScript icon" />
-      </div>
-      <span>JavaScript</span>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="./assets/images/logoadobexd.webp" alt="Adobe XD icon" />
-      </div>
-      <span>Adobe XD</span>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="./assets/images/Figma-Logov.webp" alt="Figma icon" />
-      </div>
-      <span>Figma</span>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon">
-        <img src="./assets/images/firebase.webp" alt="Firebase icon" />
-      </div>
-      <span>Firebase</span>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--============================= WORK ======================--->
-
-      <!--============================= RESUME ======================--->
-
-      <!--============================= TESTIMONIALS ======================--->
-
-      <!--============================= CONTACT ======================--->
-    </main>
-
-    <!--============================= FOOTER ======================--->
-
-    <!--============================= STYLE SWITCHER ======================--->
-
-    <div class="style-switcher" id="style-switcher">
-      <h2 class="style-switcher-title">Style Switcher</h2>
-      <div class="style-switcher-item">
-        <h3 class="style-switcher-subtitle">Colors</h3>
-        <div class="style-switcher-colors">
-          <span class="style-switcher-color active-color" style="--hue: 259">
-            <i class="ri-check-line"></i>
-          </span>
-          <span class="style-switcher-color" style="--hue: 165"> </span>
-          <span class="style-switcher-color" style="--hue: 345">
-            <i class="ri-check-line"></i>
-          </span>
-          <span class="style-switcher-color" style="--hue: 65">
-            <i class="ri-check-line"></i>
-          </span>
-          <span class="style-switcher-color" style="--hue: 15">
-            <i class="ri-check-line"></i>
-          </span>
-        </div>
-      </div>
-      <div class="style-switcher-item">
-        <h3 class="style-switcher-subtitle">Theme</h3>
-        <div class="style-switcher-themes">
-          <div class="style-switcher-theme">
-            <input
-              type="radio"
-              class="style-switcher-input"
-              name="body-theme"
-              value="light"
-              checked="true"
-              id="light-theme"
-            />
-            <label for="light-theme" class="style-switcher-label">Light</label>
-          </div>
-          <div class="style-switcher-theme">
-            <input
-              type="radio"
-              class="style-switcher-input"
-              name="body-theme"
-              value="dark"
-              checked="false"
-              id="dark-theme"
-            />
-            <label for="dark-theme" class="style-switcher-label">Dark</label>
-          </div>
-        </div>
-      </div>
-      <div class="style-switcher-close" id="switcher-close">
-        <i class="ri-close-line"></i>
-      </div>
-    </div>
-
-    <!--============================= SWIPER JS ======================--->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!--============================= MIXITUP ======================--->
-
-    <!--============================= EMAIL JS ======================--->
-
-    <!--============================= JS ======================--->
-    <script src="./js/main.js"></script>
-  </body>
 </html>

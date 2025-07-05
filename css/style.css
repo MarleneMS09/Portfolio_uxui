@@ -672,6 +672,17 @@ bottom: 12px;
   font-weight: 600;
   margin-bottom: 0.2rem;
 }
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0.5rem auto 0;
+  background-color: var(--first-color);
+  border-radius: 3px;
+}
+
 .skills-description {
   max-width: 600px;
   margin: 0 auto 4rem;
@@ -687,12 +698,12 @@ bottom: 12px;
 }
 .skill-card {
   background-color: var(--container-color);
-  padding: 1.8rem;
-  width: 140px;
-  height: 140px;
-  border-radius: 0.75rem;
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15), 
-              -2px -2px 10px rgba(255, 255, 255, 0.3);
+  padding: 2rem 1rem;
+  width: 160px;
+  height: 160px;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1),
+              0 0 0 rgba(255, 255, 255, 0); /* Sombra suave adaptable */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -702,13 +713,15 @@ bottom: 12px;
   z-index: 1;
 }
 
-.skill-card img {
-  width: 56px; 
+.skill-icon img {
+  width: auto;
   height: 56px;
+  max-width: 56px;
   object-fit: contain;
-  margin-bottom: 0.6rem;
-  filter: brightness(1.2);
+  display: block;
 }
+
+
 .skill-icon {
   display: flex;
   align-items: center;
@@ -722,11 +735,21 @@ bottom: 12px;
   font-size: 1rem;
   text-align: center;
   color: var(--title-color);
+  letter-spacing: 0.3px;
 }
+
 .skill-card:hover {
   transform: translateY(-8px);
-  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.2), 
-              -3px -3px 12px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15),
+              0 0 0 rgba(255, 255, 255, 0.1); 
+}
+
+
+.skill-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 30px 50px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* Tablet y móviles grandes (≤768px) */
@@ -779,8 +802,85 @@ bottom: 12px;
   }
 
   .skill-card span {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
   }
+}
+
+
+
+/* ====================== WORK ============================== */
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem 2.5rem;
+  margin-bottom: 3.75rem;
+}
+
+.work-item {
+  position: relative; /* 🔧 Esta línea es clave */
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: color 0.7s var(--transition);
+}
+
+.work-item:hover {
+  color: var(--first-color);
+}
+
+.work-item::before {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--first-color);
+  transition: width 0.3s var(--transition);
+}
+
+/* Active state */
+.active-work {
+  color: var(--first-color);
+}
+
+.active-work::before {
+  width: 60%;
+}
+
+.work-container{
+  grid-template-columns: repeat(3,1fr);  
+  gap: 2rem;
+}
+
+.work-img{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.work-category {
+    color: var(--first-color); 
+    font-size: var(--smaller-font-size);
+}
+
+.work-title {
+    font-size: var(--h3-font-size);
+    margin-block: 0.75rem 1.75rem;
+}
+
+.work-description {
+    min-height: 125px;
+}
+
+.mix {
+  display: block;
 }
 
 
@@ -788,9 +888,6 @@ bottom: 12px;
 
 
 
-
-
-/* ====================== WORK ============================== */
 
 /* ====================== TESTIMONIALS ============================== */
 

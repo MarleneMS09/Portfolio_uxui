@@ -1,5 +1,7 @@
 /* ==================MENU =========================  */
 
+
+
 const navMenu = document.getElementById('nav-menu'),
 navToggle = document.getElementById('nav-toggle');
 
@@ -100,4 +102,33 @@ document.querySelectorAll('input[name="body-theme"]').forEach((input) => {
   });
 });
 
+
+/* --=============================FILTER PORTFOLIO ======================--- */
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".work-item");
+  const projectCards = document.querySelectorAll(".mix");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Actualiza la clase activa
+      filterButtons.forEach((btn) => btn.classList.remove("active-work"));
+      button.classList.add("active-work");
+
+      const filter = button.getAttribute("data-filter");
+
+      projectCards.forEach((card) => {
+        if (filter === "all" || card.classList.contains(filter.replace(".", ""))) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // Mostrar todos los proyectos al cargar
+  projectCards.forEach((card) => {
+    card.style.display = "block";
+  });
+});
 
