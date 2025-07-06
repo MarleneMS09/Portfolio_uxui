@@ -806,6 +806,104 @@ bottom: 12px;
   }
 }
 
+/* ============================ LOGOS SPEAKING ================================ */
+
+
+.logo-section {
+  background-color: transparent;
+  padding: 0.5rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  padding: 0 2rem;
+}
+
+.logo-box {
+  width: 120px;
+  aspect-ratio: 7 / 5; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.logo-img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+
+
+/* ======================= Mobile version of logos ====================================  */
+
+@media (max-width: 1200px) {
+  .logo-grid {
+    gap: 5rem;
+    padding: 0 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem 4rem;
+  }
+
+  .logo-box {
+    width: 100px;
+    aspect-ratio: 5 / 4;
+  }
+}
+
+@media (max-width: 768px) {
+.logo-section {
+    margin-top: 2rem;  
+    padding: 0.5rem 0;
+  }
+
+  .logo-box {
+    width: 80px;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .logo-box {
+    width: 60px;
+    aspect-ratio: 1 / 1;
+  }
+}
 
 
 /* ====================== WORK ============================== */
@@ -883,13 +981,365 @@ bottom: 12px;
   display: block;
 }
 
+/* ====================== RESUME ============================== */
+/* ====================== RESUME ============================== */
+
+.resume-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.resume-title {
+  font-size: var(--h3-font-size);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.resume-title,
+.resume-item {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.resume-item:not(:first-child) {
+  border-top: none;
+}
+
+.resume-items {
+  position: relative;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.resume-item:first-child::before {
+  content: none;
+}
+
+.resume-item {
+  position: relative;
+  padding-right: 3rem;
+  border-right: 2px solid transparent; /* ya no necesitas línea individual */
+  margin-bottom: 0.5rem;
+}
+
+.resume-header {
+  padding-block: 1.5rem;
+  cursor: pointer;
+}
+
+.resume-header-title {
+  font-size: var(--larger-font-size);
+}
+
+.resume-icon {
+  position: absolute;
+  right: -1.25rem;
+  bottom: -1.25rem;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  color: var(--title-color);
+  font: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 2; /* por encima de la línea */
+}
+
+.resume-content {
+  height: 0;
+  overflow: hidden;
+}
+
+.resume-content-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 2rem;
+}
+
+.resume-content-title {
+  font-size: var(--h3-font-size);
+}
+
+.resume-date {
+  color: var(--title-color);
+  font-size: 1.2rem;
+  font-weight: var(--font-bold);
+}
+
+.resume-description {
+  margin-block: 1.25rem 2rem;
+}
+
+
+/* ========================== RESPONSIVE ========================== */
+
+@media screen and (max-width: 992px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume {
+    padding-inline: 1rem;
+  }
+
+  .resume-title {
+    font-size: 1.5rem;
+  }
+
+  .resume-item {
+    padding: 0.75rem 1rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .resume-header-title {
+    font-size: 1rem;
+  }
+
+  .resume-content-title {
+    font-size: 0.95rem;
+  }
+
+  .resume-description {
+    font-size: 0.9rem;
+  }
+
+  .resume-items {
+    position: relative;
+  }
+
+.resume-items::before {
+  content: "";
+  position: absolute;
+  right: 0.15rem; 
+  top: 0.1rem; 
+  width: 2px;
+  height: calc(100% - 0.20rem); 
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+/* Elimina líneas internas si existieran */
+.resume-item::before {
+  display: none;
+}
+
+  .resume-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1rem;
+    right: 0.5rem; 
+    right: 0.45rem;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .resume-title {
+    font-size: 1.25rem;
+  }
+
+  .resume-item {
+    padding-right: 2.75rem;
+  }
+
+  .resume-icon {
+    right: -1rem;
+  }
+
+  .resume-content-title {
+    font-size: 0.9rem;
+  }
+
+  .resume-description {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+/* ======================= SPEAKER ====================================  */
+
+
+/* ====================== Speaking ============================== */
+/* ===================== SPEAKER CARDS ======================= */
+.speaker-section-cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.speaker-description {
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.speaker-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.speaker-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.speaker-card:hover {
+  transform: translateY(-5px);
+}
+
+.speaker-video iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.75rem;
+}
+
+.speaker-info {
+  padding: 1.25rem 0.75rem 0;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--first-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.speaker-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--title-color);
+}
+
+.speaker-text {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.see-more {
+  margin-top: 3rem; 
+}
+
+.see-more-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 2px solid var(--first-color);
+  border-radius: 50px;
+  background-color: transparent;
+  color: var(--first-color);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 2px 2px 0 var(--title-color);
+  transition: all 0.3s ease;
+  position: relative;
+  margin-top: 1.5rem; /* Extra por si lo necesitas más separado */
+}
+
+.see-more-btn::after {
+  content: ' →';
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.see-more-btn:hover {
+  background-color: var(--first-color);
+  color: #fff;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.see-more-btn:hover::after {
+  transform: translateX(5px);
+}
+
+.speaker-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  background-color: #f9f7ff; /* Puedes personalizar este color */
+  transform: scale(1.01);
+}
+
+.video-thumbnail img {
+  width: 100%;
+  display: block;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Nueva línea */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+  .see-more {
+    margin-top: 2.5rem;
+  }
+
+  .see-more-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .see-more-btn {
+    width: 100%;
+    max-width: 260px;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
 
 
 
 
 
 
-/* ====================== TESTIMONIALS ============================== */
+
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .speaker-wrapper {
+    flex-direction: column;
+  }
+
+  .speaker-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 /* ====================== CONTACT ============================== */
 
@@ -990,105 +1440,6 @@ bottom: 12px;
 
 .show-switcher {
     right: 0;
-}
-
-/* ============================ LOGOS SPEAKING ================================ */
-
-
-.logo-section {
-  background-color: transparent;
-  padding: 0.5rem 0;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.logo-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  flex-wrap: nowrap;
-  padding: 0 2rem;
-}
-
-.logo-box {
-  width: 120px;
-  aspect-ratio: 7 / 5; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.9;
-  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
-.logo-img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
-}
-
-
-
-/* ======================= Mobile version of logos ====================================  */
-
-@media (max-width: 1200px) {
-  .logo-grid {
-    gap: 5rem;
-    padding: 0 2.5rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .logo-grid {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem 4rem;
-  }
-
-  .logo-box {
-    width: 100px;
-    aspect-ratio: 5 / 4;
-  }
-}
-
-@media (max-width: 768px) {
-.logo-section {
-    margin-top: 2rem;  
-    padding: 0.5rem 0;
-  }
-
-  .logo-box {
-    width: 80px;
-    aspect-ratio: 4 / 3;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-grid {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .logo-box {
-    width: 60px;
-    aspect-ratio: 1 / 1;
-  }
 }
 
 
