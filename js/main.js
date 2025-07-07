@@ -161,3 +161,21 @@ accordionItems.forEach((item) => {
     });
   });
 });
+
+
+var servicesSwiper = new Swiper('.testimonials-swiper', {
+  spaceBetween: 32,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1208: {
+      slidesPerView: 3,
+    },
+  }
+});
