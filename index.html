@@ -48,8 +48,11 @@
           <li class="nav-item">
             <a href="#publicspeakings" class="nav-link">Public Engagements</a>
           </li>
+           <li class="nav-item">
+            <a href="#contact" class="nav-link">Testimonials</a>
+          </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
         <div class="social-links">
@@ -679,50 +682,69 @@
 </section>
 
 
-    <!--============================= CONTACT ======================--->
-
-<section class="contact-modern">
-  <div class="contact-modern-container">
-    <h2>Contact Me</h2>
-    <p class="contact-subtext">Feel free to reach out on any of my platforms!</p>
-
-   <div class="social-icons-circle">
-  <a href="https://linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-  <a href="https://x.com/tuusuario" target="_blank" aria-label="Twitter">
-    <i class="fab fa-x-twitter"></i>
-  </a>
-  <a href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="mailto:hello@vane.dev" aria-label="Email">
-    <i class="fas fa-envelope"></i>
-  </a>
-</div>
-
-
-    <form class="contact-modern-form">
-      <div class="input-row">
-        <div class="form-group">
-          <label>Name</label>
-          <input type="text" required />
+  <!--============================= TESTIMONIALS ======================--->
+<section class="testimonials section" id="testimonial">
+  <h2 class="section-title" data-title="My customers say">Testimonials</h2>
+  <div class="container">
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper">
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide card">
+          <div class="testimonial-icon">
+            <i class="ri-double-quotes-r"></i>
+          </div>
+          <img src="assets/images/testimonial1.jpg" alt="Testimonial 1" class="testimonial-img">
+          <p class="testimonial-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, vitae! Distinctio laboriosam unde eaque ut! Dolor laborum voluptate quia minima libero dicta ipsa esse maxime ullam velit? Eaque, tempore quisquam?
+          </p>
+          <h3 class="testimonial-name">Ana Karen</h3>
+          <span class="testimonial-author">UX/UI Designer</span>
         </div>
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" required />
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide card">
+          <div class="testimonial-icon">
+            <i class="ri-double-quotes-r"></i>
+          </div>
+          <img src="assets/images/testimonial2.jpg" alt="Testimonial 2" class="testimonial-img">
+          <p class="testimonial-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, vitae! Distinctio laboriosam unde eaque ut! Dolor laborum voluptate quia minima libero dicta ipsa esse maxime ullam velit? Eaque, tempore quisquam?
+          </p>
+          <h3 class="testimonial-name">Ruby</h3>
+          <span class="testimonial-author">Front-End Developer</span>
+        </div>
+
+
+          <!-- Testimonial 3 -->
+        <div class="swiper-slide card">
+          <div class="testimonial-icon">
+            <i class="ri-double-quotes-r"></i>
+          </div>
+          <img src="assets/images/testimonial3.jpg" alt="Testimonial 3" class="testimonial-img">
+          <p class="testimonial-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, vitae! Distinctio laboriosam unde eaque ut! Dolor laborum voluptate quia minima libero dicta ipsa esse maxime ullam velit? Eaque, tempore quisquam?
+          </p>
+          <h3 class="testimonial-name">Ruby</h3>
+          <span class="testimonial-author">Front-End Developer</span>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide card">
+          <div class="testimonial-icon">
+            <i class="ri-double-quotes-r"></i>
+          </div>
+          <img src="assets/images/testimonial4.jpg" alt="Testimonial 4" class="testimonial-img">
+          <p class="testimonial-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, vitae! Distinctio laboriosam unde eaque ut! Dolor laborum voluptate quia minima libero dicta ipsa esse maxime ullam velit? Eaque, tempore quisquam?
+          </p>
+          <h3 class="testimonial-name">Erwing</h3>
+          <span class="testimonial-author">Software Engineer</span>
         </div>
       </div>
 
-      <div class="form-group full">
-        <label>Message</label>
-        <textarea rows="4" required></textarea>
-      </div>
-
-      <div class="form-actions">
-        <button type="submit" class="modern-submit">Submit</button>
-      </div>
-    </form>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 </section>
 
@@ -733,7 +755,38 @@
   </main>
 
   <!--============================= FOOTER ======================--->
+<footer class="footer">
+  <div class="footer-container">
 
+    <!-- Columna 1: Navegación interna -->
+    <div class="footer-column">
+      <a href="#home">Inicio</a>
+      <a href="#works">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </div>
+
+    <!-- Centro: Branding y redes -->
+    <div class="footer-center">
+      <h3>Vanessa M<span>Sanchez</span></h3>
+      <p>UX/UI Designer & Front-End Developer</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vanessamarlenemsanchez" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:correo@ejemplo.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <hr />
+      <small>&copy; 2025 Vanessa M. Sanchez</small>
+    </div>
+
+    <!-- Columna 2: Recursos o links externos -->
+    <div class="footer-column">
+      <a href="https://www.notion.so/tuusuario" target="_blank">Notion</a>
+      <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+      <a href="/cv-vanessa.pdf" target="_blank">Currículum</a>
+    </div>
+
+  </div>
+</footer>
 
 
 
