@@ -461,6 +461,7 @@ bottom: 12px;
 
     width: clamp(20rem, 12.6rem + 33.6vw, 42rem);
     border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
 }
 
 .home-img-wrapper::before {
