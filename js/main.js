@@ -179,3 +179,43 @@ var servicesSwiper = new Swiper('.testimonials-swiper', {
     },
   }
 });
+
+
+const form = document.getElementById("contact-form");
+  const responseMessage = document.getElementById("form-response");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+
+    const res = await fetch("https://formsubmit.co/ajax/marlenemsanchez06@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      responseMessage.textContent = "¡Mensaje enviado correctamente!";
+      responseMessage.classList.add("show");
+      form.reset();
+    } else {
+      responseMessage.textContent = "Ups... hubo un error. Intenta de nuevo.";
+      responseMessage.classList.add("show");
+      responseMessage.style.color = "red";
+    }
+
+    setTimeout(() => {
+      responseMessage.classList.remove("show");
+    }, 4000);
+  });
+
+
+

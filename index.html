@@ -48,8 +48,11 @@
           <li class="nav-item">
             <a href="#publicspeakings" class="nav-link">Public Engagements</a>
           </li>
+          <li class="nav-item">
+            <a href="#featured" class="nav-link">Featured in</a>
+          </li>
            <li class="nav-item">
-            <a href="#contact" class="nav-link">Testimonials</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
@@ -79,7 +82,9 @@
 
   <!--============================= MAIN ======================--->
   <main class="main">
+
     <!--============================= HOME ======================--->
+
 
     <section class="home-section" id="home">
       <div class="home-container container">
@@ -106,9 +111,8 @@
           </div>
 
           <p class="home-description">
-            I’m a UX/UI designer, speaker, and content creator on LinkedIn.
-            I’ve shared my experience in design and personal branding at 12+
-            tech events.
+            I’m a UX/UI designer, speaker, and LinkedIn content creator with +130,000 followers and a newsletter read by +70,000 people.
+  I’ve shared my expertise in design and personal branding at 12+ tech events and received 20+ recognitions and awards for my work.
           </p>
 
           <div class="home-socials social-links">
@@ -133,31 +137,7 @@
       </div>
     </section>
 
-    <!-- ===================== LOGOS ============================   -->
-    <div class="logo-section">
-      <div class="logo-grid">
-        <div class="logo-box">
-          <img src="assets/images/linkedinnoticias.svg" alt="LinkedIn Noticias" class="logo-img" />
-        </div>
-        <div class="logo-box">
-          <img src="assets/images/unadcolombia.svg" alt="UNAD" class="logo-img" />
-        </div>
-        <div class="logo-box">
-          <img src="assets/images/awoman.svg" alt="AWOMAN" class="logo-img" />
-        </div>
-        <!-- Logo central más destacado -->
-        <div class="logo-box logo-center">
-          <img src="assets/images/incmty.svg" alt="INC MTY" class="logo-img" />
-        </div>
-
-        <div class="logo-box">
-          <img src="assets/images/mujerdigital.svg" alt="Mujer Digital" class="logo-img" />
-        </div>
-        <div class="logo-box">
-          <img src="assets/images/favikon.svg" alt="Favikon" class="logo-img" />
-        </div>
-      </div>
-    </div>
+  
 
     <!--============================= SERVICES ======================-->
 
@@ -256,6 +236,7 @@
         </div>
       </div>
     </section>
+
 
     <!--============================= SKILLS ======================--->
 
@@ -498,9 +479,13 @@
       </div>
     </div>
 
+
+
+    
+
     <!-- EXPERIENCE -->
     <div class="resume-group">
-      <h3 class="resume-title">Experience</h3>
+      <h2 class="resume-title">Experience</h2>
       <div class="resume-items">
 
         <div class="resume-item">
@@ -604,13 +589,39 @@
   </div>
 </section>
 
-   <!--============================= SPEAKING ======================--->
+<!-- ======================= FEATURED IN ============================ -->
+<section class="featured-section" id="featured">
+  <h2 class="section-title" data-title="Featured me">Featured in</h2>
+
+  <div class="featured-logos">
+    <div class="logo-box">
+      <img src="assets/images/linkedinnoticias.svg" alt="LinkedIn Noticias" />
+    </div>
+    <div class="logo-box">
+      <img src="assets/images/unadcolombia.svg" alt="UNAD Colombia" />
+    </div>
+    <div class="logo-box">
+      <img src="assets/images/awoman.svg" alt="AWOMAN" />
+    </div>
+    <div class="logo-box">
+      <img src="assets/images/incmty.svg" alt="INC MTY" />
+    </div>
+    <div class="logo-box">
+      <img src="assets/images/mujerdigital.svg" alt="Mujer Digital" />
+    </div>
+    <div class="logo-box">
+      <img src="assets/images/favikon.svg" alt="Favikon" />
+    </div>
+  </div>
+</section>
+
+   <!--============================= SPEAK ON ======================--->
 <section class="speaker-section-cards" id="publicspeakings">
   <h2 class="section-title" data-title="Talks & Events">Public Engagements</h2>
   <p class="speaker-description">
     A glimpse into some of the conferences and workshops where I’ve shared ideas on accessibility, UX/UI design, and tech leadership.
   </p>
-
+    
   <div class="speaker-cards-grid">
     
     <!-- Card 1 -->
@@ -654,7 +665,6 @@
     </div>
 
   </div>
-
   <div class="see-more">
     <a href="https://www.linkedin.com/in/van/details/honors/" class="see-more-btn">
       See more
@@ -683,7 +693,7 @@
 
 
   <!--============================= TESTIMONIALS ======================--->
-<section class="testimonials section" id="testimonial">
+<section class="testimonials section" id="testimonials">
   <h2 class="section-title" data-title="My customers say">Testimonials</h2>
   <div class="container">
     <div class="swiper testimonials-swiper">
@@ -748,9 +758,38 @@
   </div>
 </section>
 
+  <!--============================= Contact ======================--->
+ 
+<section class="contact-wrapper" id="contact">
+  <div class="contact-flex">
+    <div class="contact-box">
+      <h2 class="section-title" data-title="My customers say">Contact</h2>
+      <p class="description">
+        Do you have a project in mind or an idea you want to share?
+        I am ready to collaborate with you.
+      </p>
 
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
 
+     <form id="contact-form" class="contact-form">
+  <input type="text" name="name" placeholder="Nombre" required />
+  <input type="email" name="email" placeholder="Correo electrónico" required />
+  <textarea name="message" placeholder="Mensaje" required></textarea>
+  <!-- Desactiva captcha de FormSubmit -->
+  <input type="hidden" name="_captcha" value="false">
 
+  <button type="submit">Enviar</button>
+</form>
+<p id="form-response" class="form-response"></p>
+
+    </div>
+  </div>
+</section>
 
   </main>
 
