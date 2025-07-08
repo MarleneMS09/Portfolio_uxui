@@ -50,17 +50,45 @@ switcherClose.addEventListener('click', () => {
  styleSwitcher.classList.remove('show-switcher');
 })
 
+
+
+/* ===================== Theme Colors ====================== */
 /* ===================== Theme Colors ====================== */
 const colors = document.querySelectorAll('.style-switcher-color');
-colors.forEach((color) => {
-    color.onclick = () => {
-        const activeColor = color.style.getPropertyValue('--hue');
-        colors.forEach((c) => c.classList.remove('active-color'));
-        color.classList.add('active-color');
 
-        document.documentElement.style.setProperty('--hue', activeColor);
-    };
-})
+// No aplicamos el color guardado al iniciar
+// Solo marcamos visualmente cuál es el actual
+const currentHue = getComputedStyle(document.documentElement).getPropertyValue('--hue');
+
+colors.forEach((color) => {
+  const colorHue = color.style.getPropertyValue('--hue');
+
+  if (colorHue === currentHue.trim()) {
+    color.classList.add('active-color');
+    color.innerHTML = '<i class="ri-check-line"></i>';
+  } else {
+    color.classList.remove('active-color');
+    color.innerHTML = '';
+  }
+});
+
+// Evento al hacer clic en un color
+colors.forEach((color) => {
+  color.addEventListener('click', () => {
+    const selectedHue = color.style.getPropertyValue('--hue');
+
+    document.documentElement.style.setProperty('--hue', selectedHue);
+    localStorage.setItem('selected-color', selectedHue); // Guardar si lo quieres para después
+
+    colors.forEach((c) => {
+      c.classList.remove('active-color');
+      c.innerHTML = '';
+    });
+
+    color.classList.add('active-color');
+    color.innerHTML = '<i class="ri-check-line"></i>';
+  });
+});
 
 /* ===================== LIGHT/DARK MODE ====================== */
 let currentTheme = 'light';
@@ -162,6 +190,7 @@ accordionItems.forEach((item) => {
   });
 });
 
+/* ===================================  TESTIMONIALS ========================================== */
 
 var servicesSwiper = new Swiper('.testimonials-swiper', {
   spaceBetween: 32,
@@ -180,7 +209,7 @@ var servicesSwiper = new Swiper('.testimonials-swiper', {
   }
 });
 
-
+/* ===================================  CONTACT ========================================== */
 const form = document.getElementById("contact-form");
   const responseMessage = document.getElementById("form-response");
 
@@ -216,6 +245,31 @@ const form = document.getElementById("contact-form");
       responseMessage.classList.remove("show");
     }, 4000);
   });
+
+
+
+/* ===================================  change backgroud header ========================================== */
+
+
+const scrollHeader = () => {
+  const header = document.getElementById('header')
+  this.scrollY >= 20 ? header.classList.add('bg-header') 
+  : header.classList.remove('bg-header');
+}
+
+window.addEventListener('scroll', scrollHeader);
+
+
+/* =================================== Remove menu mobile ========================================== */
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+    navToggle.classList.remove('animate-toggle');
+  });
+});
+
 
 
 

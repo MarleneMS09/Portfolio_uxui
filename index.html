@@ -830,46 +830,48 @@
 
 
   <!--============================= STYLE SWITCHER ======================--->
+<!--============================= STYLE SWITCHER ======================--->
+<div class="style-switcher" id="style-switcher">
+  <h2 class="style-switcher-title">Style Switcher</h2>
 
-  <div class="style-switcher" id="style-switcher">
-    <h2 class="style-switcher-title">Style Switcher</h2>
-    <div class="style-switcher-item">
-      <h3 class="style-switcher-subtitle">Colors</h3>
-      <div class="style-switcher-colors">
-        <span class="style-switcher-color active-color" style="--hue: 259">
-          <i class="ri-check-line"></i>
-        </span>
-        <span class="style-switcher-color" style="--hue: 165"> </span>
-        <span class="style-switcher-color" style="--hue: 345">
-          <i class="ri-check-line"></i>
-        </span>
-        <span class="style-switcher-color" style="--hue: 65">
-          <i class="ri-check-line"></i>
-        </span>
-        <span class="style-switcher-color" style="--hue: 15">
-          <i class="ri-check-line"></i>
-        </span>
-      </div>
-    </div>
-    <div class="style-switcher-item">
-      <h3 class="style-switcher-subtitle">Theme</h3>
-      <div class="style-switcher-themes">
-        <div class="style-switcher-theme">
-          <input type="radio" class="style-switcher-input" name="body-theme" value="light" checked="true"
-            id="light-theme" />
-          <label for="light-theme" class="style-switcher-label">Light</label>
-        </div>
-        <div class="style-switcher-theme">
-          <input type="radio" class="style-switcher-input" name="body-theme" value="dark" checked="false"
-            id="dark-theme" />
-          <label for="dark-theme" class="style-switcher-label">Dark</label>
-        </div>
-      </div>
-    </div>
-    <div class="style-switcher-close" id="switcher-close">
-      <i class="ri-close-line"></i>
+  <!-- ========== COLORS ========== -->
+  <div class="style-switcher-item">
+    <h3 class="style-switcher-subtitle">Colors</h3>
+    <div class="style-switcher-colors">
+      <!-- Rojo como color activo por defecto -->
+      <span class="style-switcher-color active-color" style="--hue: 345">
+        <i class="ri-check-line"></i>
+      </span>
+
+      <!-- Otros colores -->
+      <span class="style-switcher-color" style="--hue: 65"></span>   <!-- Verde oliva -->
+      <span class="style-switcher-color" style="--hue: 259"></span> <!-- Morado -->
+      <span class="style-switcher-color" style="--hue: 165"></span> <!-- Verde aqua -->
+      <span class="style-switcher-color" style="--hue: 15"></span>  <!-- Terracota -->
     </div>
   </div>
+
+  <!-- ========== THEME ========== -->
+  <div class="style-switcher-item">
+    <h3 class="style-switcher-subtitle">Theme</h3>
+    <div class="style-switcher-themes">
+      <div class="style-switcher-theme">
+        <input type="radio" class="style-switcher-input" name="body-theme" value="light" id="light-theme" checked />
+        <label for="light-theme" class="style-switcher-label">Light</label>
+      </div>
+      <div class="style-switcher-theme">
+        <input type="radio" class="style-switcher-input" name="body-theme" value="dark" id="dark-theme" />
+        <label for="dark-theme" class="style-switcher-label">Dark</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cierre -->
+  <div class="style-switcher-close" id="switcher-close">
+    <i class="ri-close-line"></i>
+  </div>
+</div>
+
 
   <!--============================= SWIPER JS ======================--->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -4,31 +4,18 @@
 
 /* ========================== VARIABLES CSS ==================*/
 :root {
---hue: 259;
-
-
---first-color: hsl(259, 51%, 65%);
-
-
-
-
-
---title-color: hsl(var(--hue), 20%, 15%);
---text-color: hsl(var(--hue), 15%, 25%);
-
-
---body-color: hsl(var(--hue), 60%, 96%);
-
-
+--hue: 345;
+--first-color: hsl(var(--hue), 60%, 40%);
+--title-color: hsl(var(--hue), 4%, 12%);
+--text-color: hsl(var(--hue), 4%, 20%);
+--body-color: hsl(var(--hue), 30%, 92%);
 --container-color: hsl(0, 0%, 100%);
-
-
---border-color: hsl(var(--hue), 10%, 30%);
-
-
+--border-color: hsl(var(--hue), 4%, 16%);
 --white-color: hsl(0, 0%, 100%);
---shadow-color: hsla(var(--hue), 70%, 20%, 0.1);
---toggle-color: hsl(0, 0%, 10%);
+--shadow-color: hsla(var(--hue), 80%, 10%, 0.2%);
+--toggle-color: hsl(var(--hue), 4%, 12%); 
+--first-color-light: hsl(var(--hue), 60%, 85%); 
+
 
     /* ===================FONT FAMILY===============*/
   --body-font: 'Jost', sans-serif;
@@ -90,6 +77,20 @@
   filter: invert(1);
 }
 
+body.dark .contact-form button {
+  background-color: var(--first-color);         /* fondo morado */
+  color: var(--white-color);                    /* texto blanco */
+  border-color: var(--first-color);             /* borde morado */
+  box-shadow: 4px 4px 0 var(--first-color);
+}
+
+body.dark .contact-form button:hover {
+  background-color: var(--container-color);     /* vuelve al fondo claro */
+  color: var(--first-color);                    /* texto morado */
+  border-color: var(--first-color);
+  box-shadow: 6px 6px 0 var(--first-color);
+}
+
 
 
 
@@ -106,6 +107,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+
 
 body,
 button,
@@ -389,10 +392,16 @@ bottom: 12px;
 
 /* Change background header */ 
 
+.bg-header{
+  background-color: var(--container-color);
+}
+
 
 /* ====================== MAIN ============================== */
 
-
+.main {
+  overflow: hidden;
+}
 /* ====================== HOME ============================== */
 
 .home-container {
@@ -431,8 +440,9 @@ bottom: 12px;
 }
 .home-subtitle span,
 .home-title span {
-  color: var(--first-color);
+  color: var(--first-color); 
 }
+
 
 .home-job {
     font-size: var(--h3-font-size);
@@ -451,7 +461,6 @@ bottom: 12px;
 
     width: clamp(20rem, 12.6rem + 33.6vw, 42rem);
     border-radius: 0 0 100vw 100vw;
-    overflow: hidden;
 }
 
 .home-img-wrapper::before {
@@ -1466,24 +1475,31 @@ body[data-theme="dark"] .see-more-btn:hover {
 }
 
 .contact-form button {
-  background-color: var(--first-color);
-  color: var(--title-color); /* ← Nueva variable */
-  border: 2px solid var(--border-color);
-  box-shadow: 4px 4px 0 var(--border-color);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  border: 2px solid var(--first-color);
   border-radius: 2rem;
   padding: 0.8rem 2.5rem;
   font-size: 1rem;
   font-weight: 600;
-  transition: all 0.3s ease;
+  box-shadow: 4px 4px 0 var(--border-color);
+  transition: color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer; 
 }
 
+
 .contact-form button:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--first-color);
+  transform: translate(-2px, -2px) scale(1.02);
+  box-shadow: 8px 8px 0 var(--first-color);
   background-color: var(--container-color);
   color: var(--first-color);
   border-color: var(--first-color);
 }
+
+
+
 
 .form-response {
   margin-top: 1.5rem;
@@ -2054,3 +2070,5 @@ body[data-theme="dark"] .see-more-btn:hover {
         transform: scale(0.5);
     }
 }
+
+
