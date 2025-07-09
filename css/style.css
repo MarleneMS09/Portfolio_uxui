@@ -402,6 +402,43 @@ bottom: 12px;
 .main {
   overflow: hidden;
 }
+
+/* ====================== CURSOR ============================== */
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--title-color);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* point */
+.custom-cursor::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+
+  body {
+    cursor: auto;
+  }
+}
+
 /* ====================== HOME ============================== */
 
 .home-container {
@@ -2072,5 +2109,3 @@ body[data-theme="dark"] .see-more-btn:hover {
         transform: scale(0.5);
     }
 }
-
-
