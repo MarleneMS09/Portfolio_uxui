@@ -28,6 +28,7 @@ var servicesSwiper = new Swiper('.services-swiper', {
   }
 });
 
+
 /* ===================== STYLE SWITCHER ====================== */
 const styleSwitcher = document.getElementById('style-switcher'),
 switcherToggle = document.getElementById('switcher-toggle'),

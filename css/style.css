@@ -1964,6 +1964,9 @@ body[data-theme="dark"] .see-more-btn:hover {
     .services-swiper,
     .testimonials-swiper {
         max-width: 900px;
+        /* add behavior */
+        touch-action: pan-y;
+        scroll-behavior: smooth;
     }
 
     .swiper-pagination-bullets::before {
