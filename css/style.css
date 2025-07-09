@@ -442,8 +442,6 @@ bottom: 12px;
 .home-title span {
   color: var(--first-color); 
 }
-
-
 .home-job {
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
@@ -690,6 +688,9 @@ bottom: 12px;
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+   max-width: calc(5 * 160px + 4 * 2rem); /* 5 tarjetas + 4 espacios de gap */
+  margin-left: auto;
+  margin-right: auto;
 }
 .skill-card {
   background-color: var(--container-color);

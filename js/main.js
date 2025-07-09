@@ -1,7 +1,4 @@
 /* ==================MENU =========================  */
-
-
-
 const navMenu = document.getElementById('nav-menu'),
 navToggle = document.getElementById('nav-toggle');
 
@@ -14,7 +11,6 @@ navToggle.addEventListener('click', () => {
 
 
 /* =============================  SERVICES SWIPER  ===========================================*/
-
 var servicesSwiper = new Swiper('.services-swiper', {
   spaceBetween: 32,
   pagination: {
@@ -32,9 +28,6 @@ var servicesSwiper = new Swiper('.services-swiper', {
   }
 });
 
-
-
-
 /* ===================== STYLE SWITCHER ====================== */
 const styleSwitcher = document.getElementById('style-switcher'),
 switcherToggle = document.getElementById('switcher-toggle'),
@@ -50,14 +43,8 @@ switcherClose.addEventListener('click', () => {
  styleSwitcher.classList.remove('show-switcher');
 })
 
-
-
-/* ===================== Theme Colors ====================== */
 /* ===================== Theme Colors ====================== */
 const colors = document.querySelectorAll('.style-switcher-color');
-
-// No aplicamos el color guardado al iniciar
-// Solo marcamos visualmente cuál es el actual
 const currentHue = getComputedStyle(document.documentElement).getPropertyValue('--hue');
 
 colors.forEach((color) => {
@@ -104,7 +91,6 @@ document.querySelectorAll('input[name="body-theme"]').forEach((input) => {
     });
 });
 
-
 /* ====================== Saved theme ======================== */
 
 const savedTheme = localStorage.getItem('selected-theme');
@@ -115,7 +101,6 @@ if (savedTheme === 'dark') {
   document.body.classList.remove('dark');
   document.getElementById('light-theme').checked = true;
 }
-
 
 /* ====================  Manually theme ======================== */
 document.querySelectorAll('input[name="body-theme"]').forEach((input) => {
@@ -129,7 +114,6 @@ document.querySelectorAll('input[name="body-theme"]').forEach((input) => {
     }
   });
 });
-
 
 /* --=============================FILTER PORTFOLIO ======================--- */
 document.addEventListener("DOMContentLoaded", () => {
@@ -153,14 +137,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-
-  // Mostrar todos los proyectos al cargar
   projectCards.forEach((card) => {
     card.style.display = "block";
   });
 });
-
-
 
 /* ===================================  RESUME ========================================== */
 const accordionItems = document.querySelectorAll(".resume-item");
@@ -245,11 +225,7 @@ const form = document.getElementById("contact-form");
       responseMessage.classList.remove("show");
     }, 4000);
   });
-
-
-
 /* ===================================  change backgroud header ========================================== */
-
 
 const scrollHeader = () => {
   const header = document.getElementById('header')
@@ -258,7 +234,6 @@ const scrollHeader = () => {
 }
 
 window.addEventListener('scroll', scrollHeader);
-
 
 /* =================================== Remove menu mobile ========================================== */
 const navLinks = document.querySelectorAll('.nav-link');
