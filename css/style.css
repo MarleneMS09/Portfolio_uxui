@@ -907,7 +907,8 @@ bottom: 12px;
 }
 
 .work-description {
-    min-height: 125px;
+  min-height: 125px;
+  overflow: visible;
 }
 
 .mix {
