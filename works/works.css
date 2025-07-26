@@ -329,19 +329,6 @@ html, body {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 strong {
   color: var(--first-color);
   font-weight: 600;
@@ -490,3 +477,9 @@ img.medium {
 }
 
 
+.empathy-img {
+  width:700px;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem;
+}
