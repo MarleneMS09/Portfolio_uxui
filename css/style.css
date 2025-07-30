@@ -853,7 +853,7 @@ bottom: 12px;
 .work-item {
   position: relative; 
   color: var(--title-color);
-  font-size: var(--small-font-size);
+  font-size: 1.1rem;
   font-weight: var(--font-bold);
   cursor: pointer;
   transition: color 0.7s var(--transition);
