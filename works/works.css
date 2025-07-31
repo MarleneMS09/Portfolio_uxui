@@ -1,6 +1,11 @@
 
 
-body {
+/* =============================
+   🌍 RESET Y GLOBAL
+   ============================= */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Jost', sans-serif;
   background-color: var(--bg-color);
@@ -8,50 +13,38 @@ body {
   line-height: 1.8;
 }
 
-html, body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-
-/* NAVBAR espejo con pasos */
+/* =============================
+   🔝 NAVBAR (espejo de pasos)
+   ============================= */
 .mirror-navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
   padding: 1.2rem 0;
   display: flex;
   justify-content: center;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
-  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--container-color);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.back-arrow {
-  margin-bottom: 2rem;
-}
-
-.mirror-navbar {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05); 
-  background-color: var(--container-color); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
 .mirror-navbar nav ul {
-  background-color: rgba(255, 255, 255, 0.25); 
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); /* soporte Safari */
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 999px;
   display: flex;
   gap: 1.5rem;
   padding: 0.8rem 2rem;
   list-style: none;
   margin: 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-  border: 1px solid rgba(255, 255, 255, 0.4); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
-
 
 .mirror-navbar nav a {
   text-decoration: none;
@@ -65,12 +58,20 @@ html, body {
   color: var(--first-color);
 }
 
-/* Hero */
+.mirror-navbar nav a:focus-visible {
+  outline: 2px solid var(--first-color);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* =============================
+   🏠 HERO
+   ============================= */
 .project-hero {
   text-align: center;
   max-width: 900px;
   margin: 3rem auto;
-  padding: 0 1rem;
+  padding: 6rem 1rem 0;
 }
 
 .project-hero h1 {
@@ -79,176 +80,6 @@ html, body {
   margin-bottom: 0.5rem;
 }
 
-.project-hero .client-logo {
-  margin-top: 1rem;
-}
-
-.project-hero .date {
-  margin-top: 0.5rem;
-  display: block;
-}
-
-
-.project-hero .divider {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  color: #313030;
-}
-
-.project-cover {
-  display: block;
-  max-width: 1100px; 
-  width: 100%;
-  height: auto;
-  margin: 2rem auto;
-}
-
-
-/* Secciones */
-.project-description {
-  max-width: 800px;
-  width: 100%;
-  margin: 2.5rem auto;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-
-.project-description h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.project-description p {
-  max-width: 750px;
-  margin: 1.2rem auto;
-  line-height: 1.7;
-}
-
-
-.section-divider {
-  width: 60px;
-  height: 3px;
-  background-color:black;
-  margin: 2.5rem auto;
-  border-radius: 999px;
-}
-
-@media (max-width: 768px) {
-  .mirror-navbar nav ul {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0.6rem 1.2rem;
-    gap: 1.2rem;
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .mirror-navbar nav ul::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
-  }
-
-  .mirror-navbar nav li {
-    flex: 0 0 auto;
-    text-align: center;
-  }
-
-  .mirror-navbar nav a {
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-
-  .project-hero {
-    padding: 0 1rem;
-  }
-
-  .project-cover {
-    width: 100%;
-    height: auto;
-    margin-top: 1.5rem;
-  }
-
-  .project-description h2 {
-    font-size: 1.25rem;
-    line-height: 1.3;
-  }
-
-  .project-description p {
-    font-size: 0.95rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .mirror-navbar nav ul {
-    flex-direction: row;
-    overflow-x: auto;
-    justify-content: start;
-    white-space: nowrap;
-    padding: 0.5rem 1rem;
-    gap: 1rem;
-    scrollbar-width: none; /* Firefox */
-  }
-  
-   .mirror-navbar nav ul::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
-  }
-
-   .mirror-navbar nav li {
-    flex: 0 0 auto;
-  }
-  .mirror-navbar nav a {
-    font-size: 0.9rem;
-    white-space: nowrap;
-  }
-  .project-hero h1 {
-    font-size: 1.3rem;
-    line-height: 1.4;
-  }
-
-  .project-hero .divider {
-    font-size: 0.9rem;
-  }
-
-  .project-cover {
-    border-radius: 0.75rem;
-  }
-
-  .project-description {
-    padding: 0 1rem;
-    font-size: 0.95rem;
-  }
-
-  .project-description h2 {
-    font-size: 1.2rem;
-  }
-
-    .project-hero .back-arrow {
-    font-size: 0.85rem;
-    padding: 0.3rem 0.6rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.logo-floating {
-  position: absolute;
-  top: 7rem;
-  right: 2rem;
-  width: 80px;
-  opacity: 0.8;
-  z-index: 10;
-}
-
-.client-logo {
-  margin: 1rem auto;
-  text-align: center;
-}
-
-.client-logo img {
-  width: 90px;
-  max-width: 30%;
-  opacity: 0.9;
-}
 .project-hero .back-arrow {
   display: inline-block;
   margin-bottom: 2rem;
@@ -267,16 +98,65 @@ html, body {
   color: var(--first-color);
 }
 
+.project-hero .client-logo,
+.project-hero .date,
+.project-hero .divider {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.2rem;
+  color: #313030;
+}
 
-/*  Metrics */
-.metrics {
+.project-cover {
+  display: block;
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 0.75rem;
+}
+
+
+/* =============================
+   🧾 SECCIONES
+   ============================= */
+.project-description {
+  max-width: 800px;
+  width: 100%;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.project-description h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-description p {
+  max-width: 750px;
+  margin: 1.2rem auto;
+  line-height: 1.7;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  margin: 2.5rem auto;
+  border-radius: 999px;
+}
+
+/* =============================
+   📊 METRICS, TABLES, CONSTRAINTS
+   ============================= */
+.metrics, .stakeholders, .constraints {
   padding: 3rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-
-/* ========== TABLES ========== */
 .table-wrapper {
   overflow-x: auto;
   max-width: 100%;
@@ -287,10 +167,13 @@ html, body {
 
 .table-wrapper table {
   width: 100%;
-  min-width: 700px; /* evita que se achique demasiado en mobile */
+  min-width: 700px;
   border-collapse: collapse;
   background-color: var(--container-color);
   border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-size: 1rem;
 }
 
 .table-wrapper th,
@@ -312,145 +195,24 @@ html, body {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-/* RESPONSIVE TABLES */
-@media (max-width: 768px) {
-  .table-wrapper {
-    margin: 1.5rem 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .table-wrapper table {
-    min-width: unset;
-    font-size: 0.95rem;
-  }
-
-  .table-wrapper th,
-  .table-wrapper td {
-    padding: 0.75rem;
-  }
-}
-
 strong {
   color: var(--first-color);
   font-weight: 600;
 }
 
-/* STAKEHOLDERS */
-
-.stakeholders {
-  padding: 3rem 1rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.table-wrapper {
-  overflow-x: auto;
-}
-
-.table-wrapper table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
-  background-color: var(--container-color);
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-table th {
-  background-color: var(--first-color);
-  color: white;
-  text-align: left;
-  padding: 1rem;
-  font-weight: 600;
-}
-
-table td {
-  padding: 1rem;
-  border-top: 1px solid var(--border-color);
-  color: var(--text-color);
-  vertical-align: top;
-}
-
-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.02);
-}
-
-
-/* Constrains */
-.constraints {
-  padding: 3rem 1rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.table-wrapper {
-  overflow-x: auto;
-}
-
-.table-wrapper table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
-  background-color: var(--container-color);
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-table th {
-  background-color: var(--first-color);
-  color: white;
-  text-align: left;
-  padding: 1rem;
-  font-weight: 600;
-}
-
-table td {
-  padding: 1rem;
-  border-top: 1px solid var(--border-color);
-  color: var(--text-color);
-  vertical-align: top;
-}
-
-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.02);
-}
-
-[id] {
-  scroll-margin-top: 6rem; /* ajusta según el alto de tu navbar */
-}
-
-.mirror-navbar nav a:focus-visible {
-  outline: 2px solid var(--first-color);
-  outline-offset: 4px;
-  border-radius: 6px;
-}
-
-@media (max-width: 480px) {
-  .mirror-navbar nav ul {
-    padding: 0.8rem 1.5rem;
-    gap: 1.2rem;
-  }
-}
-
+/* =============================
+   🖼️ IMÁGENES Y GRIDS
+   ============================= */
 img.medium {
   width: 100%;
-  max-width: 800px; 
+  max-width: 800px;
   height: auto;
   display: block;
-  margin: 2rem auto; 
-  border-radius: 0.5rem; 
+  margin: 2rem auto;
+  border-radius: 0.5rem;
 }
 
-
-
-
-
-/* ========== GRID IMAGES GENERAL ========== */
-.image-grid{
+.image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -468,19 +230,189 @@ img.medium {
   object-fit: cover;
 }
 
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-  .image-grid,
-  .benchmark-images,
-  .user-personas-grid {
-    grid-template-columns: 1fr; 
-  }
-}
-
-
 .empathy-img {
-  width:700px;
+  width: 700px;
   max-width: 100%;
   height: auto;
   margin: 1rem;
 }
+
+.logo-floating {
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
+  width: 80px;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.client-logo {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.client-logo img {
+  width: 90px;
+  max-width: 30%;
+  opacity: 0.9;
+}
+
+/* =============================
+   📱 MEDIA QUERIES
+   ============================= */
+@media (max-width: 768px) {
+  .mirror-navbar nav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.6rem 1.2rem;
+    gap: 1.2rem;
+    scrollbar-width: none;
+  }
+
+  .mirror-navbar nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mirror-navbar nav li {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+
+  .mirror-navbar nav a {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .project-hero {
+    padding: 6.5rem 1.2rem 0;
+  }
+
+  .project-cover {
+    margin-top: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-description h2 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .project-description p {
+    font-size: 0.95rem;
+  }
+
+  .image-grid,
+  .benchmark-images,
+  .user-personas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-wrapper {
+    margin: 1.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .table-wrapper table {
+    min-width: unset;
+    font-size: 0.95rem;
+  }
+
+  .table-wrapper th,
+  .table-wrapper td {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mirror-navbar nav ul {
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: start;
+    white-space: nowrap;
+    padding: 0.4rem 1rem;
+    gap: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .mirror-navbar nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mirror-navbar nav li {
+    flex: 0 0 auto;
+  }
+
+  .mirror-navbar nav a {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .project-hero {
+    padding-top: 9.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project-hero h1 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .project-cover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-description {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .project-description h2 {
+    font-size: 1.1rem;
+  }
+
+  .project-hero .back-arrow {
+    font-size: 0.85rem;
+    margin: 2rem auto 1.5rem;
+    padding: 0.4rem 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .mirror-navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0.4rem 1rem;
+    gap: 0.6rem;
+    min-width: max-content;
+    scrollbar-width: none;
+  }
+
+  .mirror-navbar nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mirror-navbar nav li {
+    flex: 0 0 auto;
+  }
+
+  .mirror-navbar nav a {
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .project-hero {
+    padding-top: 10rem;
+  }
+}
+
+/* =============================
+   ✅ FIN DEL CSS
+   ============================= */
