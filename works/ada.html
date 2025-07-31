@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>ADA - Project Page</title>
   <link rel="stylesheet" href="works.css">
@@ -11,38 +11,44 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+
+
+  <!--========= Navbar =============================-->
   <header class="mirror-navbar">
     <div class="nav-container">
-      <nav class="nav-menu">
+      <nav class="nav-menu" id="side-nav">
         <ul>
           <li><a href="#research">Research</a></li>
           <li><a href="#define">Define</a></li>
           <li><a href="#ideate">Ideate</a></li>
           <li><a href="#design">Design</a></li>
           <li><a href="#prototype">Prototype</a></li>
+          <li><a href="#test">Test</a></li>
           <li><a href="#iterate">Iterate</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- ================================ hero =================================================-->
   <section class="project-hero">
-
     <a href="../index.html" class="back-arrow" title="Back to Home">← Back to Home</a>
     <h1>Ada project</h1>
     <h2>Client: Vermic Studios</h2>
+      <!-- ================================ logo =================================================-->
     <div class="client-logo">
       <img src="../assets/images/1630600049783.jpeg" alt="Vermic Studios Logo">
     </div>
-
+        <!-- ================================ date =================================================-->
     <p class="date">Jan 2025</p>
+      <!-- ================================ divider =================================================-->
     <div class="divider">⋅ ✦ ⋅</div>
+      <!-- ================================ cover =================================================-->
     <img src="../assets/images/capturalogin.webp" alt="Cover Project" class="project-cover" />
   </section>
 
-  <!-- Descripción -->
+  <!-- ================================ RESEARCH =================================================-->
+
   <section class="project-description" id="research">
     <h2>1. Research</h2>
     <div class="context">
@@ -82,31 +88,45 @@
         Results will be validated through user testing focused on task completion, perceived value, and ease of use.
       </p>
     </div>
-     <div class="user-segmentation">
-  <h3>User Segmentation</h3>
-  <p>
-    Vermic Studios has been used by various profiles over time, including students, teachers, school coordinators, and editorial teams. 
-    Each one interacts with the system differently, so identifying them was essential before designing any solution.
-  </p>
+    <div class="user-segmentation">
+      <h3>User Segmentation</h3>
+      <p>
+        Vermic Studios has been used by various profiles over time, including students, teachers, school coordinators,
+        and editorial teams.
+        Each one interacts with the system differently, so identifying them was essential before designing any solution.
+      </p>
 
+      <ul>
+        <li><strong>Teachers:</strong> plan lessons, find and adapt resources, and track student progress.</li>
+        <li><strong>Students:</strong> access and complete activities assigned by teachers.</li>
+        <li><strong>Coordinators:</strong> select educational packages and supervise implementation.</li>
+        <li><strong>Editorial team:</strong> create and maintain content with a focus on pedagogical quality.</li>
+      </ul>
+
+      <p>
+        For this project, the UX/UI process focused specifically on <strong>teachers, students, and the editorial
+          team</strong>.
+        These profiles were selected for their frequent interaction with the platform and their direct impact on the
+        quality of the learning experience.
+      </p>
+    </div>
+    <div class="research-strategy">
+  <h3>User Research Strategy</h3>
+  <p>To ensure the new platform aligned with real user needs, I developed a research plan rooted in qualitative and contextual techniques. Our strategy aimed to uncover daily pain points, workflow inefficiencies, and accessibility barriers experienced by teachers, students, and the editorial team.</p>
+  <p>We followed a two-phase approach:</p>
   <ul>
-    <li><strong>Teachers:</strong> plan lessons, find and adapt resources, and track student progress.</li>
-    <li><strong>Students:</strong> access and complete activities assigned by teachers.</li>
-    <li><strong>Coordinators:</strong> select educational packages and supervise implementation.</li>
-    <li><strong>Editorial team:</strong> create and maintain content with a focus on pedagogical quality.</li>
+    <li><strong>Discovery:</strong> Gathering insights through interviews, contextual inquiries, and platform audits.</li>
+    <li><strong>Validation:</strong> Running early usability tests and co-design workshops to refine key components.</li>
   </ul>
-
-  <p>
-    For this project, the UX/UI process focused specifically on <strong>teachers, students, and the editorial team</strong>. 
-    These profiles were selected for their frequent interaction with the platform and their direct impact on the quality of the learning experience.
-  </p>
+  <p>This approach allowed us to balance deep qualitative insights with feasibility constraints, ensuring design decisions were grounded in user evidence and cross-team collaboration.</p>
 </div>
-<div class="user-relations-map">
-  <h4>Role Interaction Maps</h4>
-  <img src="../assets/images/maparelaciones1.png" alt="Functional Relationship Map - Vermic Studios" class="project-cover medium">
-  <img src="../assets/images/maparelaciones2.png" alt="Content Flow - Editorial to Students" class="project-cover medium">
-</div>
-
+    <div class="user-relations-map">
+      <h3>Role Interaction Maps</h3>
+      <img src="../assets/images/maparelaciones1.png" alt="Functional Relationship Map - Vermic Studios"
+        class="project-cover medium">
+      <img src="../assets/images/maparelaciones2.png" alt="Content Flow - Editorial to Students"
+        class="project-cover medium">
+    </div>
     <div class="objetives">
       <h3>Objetives</h3>
       <ul>
@@ -262,285 +282,297 @@
       </div>
     </div>
     <section class="project-description" id="benchmark">
-  <h2>3. Competitive Benchmark</h2>
-  <p>This benchmark analyzes 4 educational platforms focusing on navigation architecture, user segmentation, visual design, accessibility, and key takeaways for the redesign of Vermic Studios.</p>
-  <div class="table-wrapper">
+      <h3> Competitive Benchmark</h3>
+      <p>This benchmark analyzes 4 educational platforms focusing on navigation architecture, user segmentation, visual
+        design, accessibility, and key takeaways for the redesign of Vermic Studios.</p>
+      <div class="table-wrapper">
 
-    <table>
-      <thead>
-        <tr>
-          <th>Platform</th>
-          <th>Navigation Structure</th>
-          <th>User Segmentation</th>
-          <th>Visual Design & Interaction</th>
-          <th>Accessibility & Adaptability</th>
-          <th>What Vermic Can Learn</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Khan Academy</strong></td>
-          <td>Clear, hierarchical: subject > level > lesson</td>
-          <td>Role selection available, but UI remains the same</td>
-          <td>Clean, functional, no visual distractions</td>
-          <td>Good contrast and mobile performance</td>
-          <td>Adopt clear hierarchy and simple, functional design</td>
-        </tr>
-        <tr>
-          <td><strong>Smartick</strong></td>
-          <td>Fixed step-by-step journey for children</td>
-          <td>Student-focused only, no teacher tools</td>
-          <td>Friendly visuals, large fonts, soft animations</td>
-          <td>Mobile-friendly but weak WCAG compliance</td>
-          <td>Simplify student flows and add teacher-specific tools</td>
-        </tr>
-        <tr>
-          <td><strong>ClassDojo</strong></td>
-          <td>Social-feed style, ideal for daily updates</td>
-          <td>Different views for teachers, students, and families</td>
-          <td>Colorful, with motivational messages and characters</td>
-          <td>Responsive, but low visual contrast in some areas</td>
-          <td>Visually adapt UI by role without infantilizing it</td>
-        </tr>
-        <tr>
-          <td><strong>Google Classroom</strong></td>
-          <td>Rigid but functional: class > topic > assignment</td>
-          <td>Different roles, same visual experience</td>
-          <td>Flat design, lacks visual hierarchy</td>
-          <td>Keyboard/screen reader compatible</td>
-          <td>Create flexible, role-adapted and intuitive interface</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>Navigation Structure</th>
+              <th>User Segmentation</th>
+              <th>Visual Design & Interaction</th>
+              <th>Accessibility & Adaptability</th>
+              <th>What Vermic Can Learn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Khan Academy</strong></td>
+              <td>Clear, hierarchical: subject > level > lesson</td>
+              <td>Role selection available, but UI remains the same</td>
+              <td>Clean, functional, no visual distractions</td>
+              <td>Good contrast and mobile performance</td>
+              <td>Adopt clear hierarchy and simple, functional design</td>
+            </tr>
+            <tr>
+              <td><strong>Smartick</strong></td>
+              <td>Fixed step-by-step journey for children</td>
+              <td>Student-focused only, no teacher tools</td>
+              <td>Friendly visuals, large fonts, soft animations</td>
+              <td>Mobile-friendly but weak WCAG compliance</td>
+              <td>Simplify student flows and add teacher-specific tools</td>
+            </tr>
+            <tr>
+              <td><strong>ClassDojo</strong></td>
+              <td>Social-feed style, ideal for daily updates</td>
+              <td>Different views for teachers, students, and families</td>
+              <td>Colorful, with motivational messages and characters</td>
+              <td>Responsive, but low visual contrast in some areas</td>
+              <td>Visually adapt UI by role without infantilizing it</td>
+            </tr>
+            <tr>
+              <td><strong>Google Classroom</strong></td>
+              <td>Rigid but functional: class > topic > assignment</td>
+              <td>Different roles, same visual experience</td>
+              <td>Flat design, lacks visual hierarchy</td>
+              <td>Keyboard/screen reader compatible</td>
+              <td>Create flexible, role-adapted and intuitive interface</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-  <div class="benchmark-insights">
-    <h3>Insights & Design Recommendations</h3>
-    <ul>
-      <li>Segment user experience by role from the very first screen, visually and functionally.</li>
-      <li>Apply accessibility principles from the start: strong contrast, keyboard navigation, scalable text.</li>
-      <li>Design a professional, friendly UI clear and structured, without being childish.</li>
-      <li>Organize content based on user type, school level, and subject for intuitive navigation.</li>
-      <li>Enable internal communication features (e.g., notes, comments) to foster user interaction.</li>
-    </ul>
-  </div>
+      <div class="benchmark-insights">
+        <h3>Insights & Design Recommendations</h3>
+        <ul>
+          <li>Segment user experience by role from the very first screen, visually and functionally.</li>
+          <li>Apply accessibility principles from the start: strong contrast, keyboard navigation, scalable text.</li>
+          <li>Design a professional, friendly UI clear and structured, without being childish.</li>
+          <li>Organize content based on user type, school level, and subject for intuitive navigation.</li>
+          <li>Enable internal communication features (e.g., notes, comments) to foster user interaction.</li>
+        </ul>
+      </div>
 
-  <div class="benchmark-images">
-    <h3>Visual References</h3>
-    <div class="image-grid">
-      <img src="../assets/images/khan.png" alt="Khan Academy UI">
-      <img src="../assets/images/smartick.png" alt="Smartick user flow">
-      <img src="../assets/images/classdojo.png" alt="ClassDojo screen">
-      <img src="../assets/images/meet.png" alt="Google Classroom layout">
-    </div>
-  </div>
-  
-
-   
+      <div class="benchmark-images">
+        <h3>Visual References</h3>
+        <div class="image-grid">
+          <img src="../assets/images/khan.png" alt="Khan Academy UI">
+          <img src="../assets/images/smartick.png" alt="Smartick user flow">
+          <img src="../assets/images/classdojo.png" alt="ClassDojo screen">
+          <img src="../assets/images/meet.png" alt="Google Classroom layout">
+        </div>
+      </div>
 
 
 
-</section>
 
-   
+
+
+    </section>
   </section>
 
+ <!--======================================DEFINE======================================================-->
+
   <section class="project-description" id="define">
-  <h2>2. Define</h2>
-  <p>At this stage, I focused on identifying who the users were and how they interacted within the platform.</p>
-
-  <div class="define-block">
-    <h3>Actor Map</h3>
-    <p>
-      ADA isn’t just used by students and teachers. There are also people behind the scenes who make decisions, provide support, or influence the experience from the outside. 
-      After reviewing the first version, I grouped the actors into four categories: core users, school management, support and providers, and external environment.
-    </p>
-
-    <img src="../assets/images/mapactores.png" alt="Actor Map - ADA" class="project-cover medium">
-
-    <p>Here’s how I defined their level of involvement:</p>
-    <ul>
-      <li><strong>Core users:</strong> students and teachers who interact directly with the platform on a daily basis.</li>
-      <li><strong>School management:</strong> academic coordinators and administrators who help implement and oversee how the platform is used.</li>
-      <li><strong>Support and providers:</strong> the editorial and technical teams are very involved in creating and maintaining the content. External tech providers offer the tools that support the system.</li>
-      <li><strong>External environment:</strong> parents and educational authorities don’t use the platform directly, but they still play a role in the overall experience.</li>
-    </ul>
-
-    <p>
-      This analysis helped me focus the design around three key roles: students, teachers, and the editorial team. 
-      By understanding how they connect with each other, I was able to align design decisions with real user needs and responsibilities.
-    </p>
-
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Actor</th>
-            <th>Main Needs</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Students</td>
-            <td>Clear navigation, accessible content, and motivation</td>
-          </tr>
-          <tr>
-            <td>Teachers</td>
-            <td>Task management and progress tracking</td>
-          </tr>
-          <tr>
-            <td>Editorial team</td>
-            <td>Content control and structured feedback</td>
-          </tr>
-        </tbody>
-      </table>
+    <h2>2. Define</h2>
+    <p>At this stage, I focused on identifying who the users were and how they interacted within the platform.</p>
+<!--Actor Map-->
+    <div class="define-block">
+      <h3>Actor Map</h3>
+      <p>
+        ADA isn’t just used by students and teachers. There are also people behind the scenes who make decisions,
+        provide support, or influence the experience from the outside.
+        After reviewing the first version, I grouped the actors into four categories: core users, school management,
+        support and providers, and external environment.
+      </p>
+      <img src="../assets/images/mapactores.png" alt="Actor Map - ADA" class="project-cover medium">
+      <p>Here’s how I defined their level of involvement:</p>
+      <ul>
+        <li><strong>Core users:</strong> students and teachers who interact directly with the platform on a daily basis.
+        </li>
+        <li><strong>School management:</strong> academic coordinators and administrators who help implement and oversee
+          how the platform is used.</li>
+        <li><strong>Support and providers:</strong> the editorial and technical teams are very involved in creating and
+          maintaining the content. External tech providers offer the tools that support the system.</li>
+        <li><strong>External environment:</strong> parents and educational authorities don’t use the platform directly,
+          but they still play a role in the overall experience.</li>
+      </ul>
+      <p>
+        This analysis helped me focus the design around three key roles: students, teachers, and the editorial team.
+        By understanding how they connect with each other, I was able to align design decisions with real user needs and
+        responsibilities.
+      </p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Actor</th>
+              <th>Main Needs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Students</td>
+              <td>Clear navigation, accessible content, and motivation</td>
+            </tr>
+            <tr>
+              <td>Teachers</td>
+              <td>Task management and progress tracking</td>
+            </tr>
+            <tr>
+              <td>Editorial team</td>
+              <td>Content control and structured feedback</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
+ <!--Empathy Map-->
+    <div class="empathy-map">
+      <h3>Empathy Map</h3>
+      <p>The goal of these empathy maps is to deeply understand the emotions, motivations, frustrations, and behaviors
+        of
+        key users interacting with the ADA educational platform.
+        This tool helped humanize the research findings, identify real friction points, and guide user-centered design
+        decisions tailored to the specific needs of teachers and students in different educational contexts.</p>
+      <h3>User-Specific Objetives</h3>
+      <div class="empathy-objective">
+        <h4>Laura – Objective</h4>
+        <p>
+          Understand how an experienced teacher organizes her work, the barriers she faces when using digital platforms,
+          and the conditions needed for her to adopt new tools confidently and efficiently.
+        </p>
+      </div>
+
+      <img src="../assets/images/Laura.png" alt="LaurauserMap" class="empathy-img">
 
 
-<div class="empathy-map">
-  <h3>Empathy Map</h3>
-  <p>The goal of these empathy maps is to deeply understand the emotions, motivations, frustrations, and behaviors of
-    key users interacting with the ADA educational platform.
-    This tool helped humanize the research findings, identify real friction points, and guide user-centered design
-    decisions tailored to the specific needs of teachers and students in different educational contexts.</p>
-    <h4>User-Specific Objetives</h4>
-    <div class="empathy-objective">
-  <h4>Laura – Objective</h4>
-  <p>
-    Understand how an experienced teacher organizes her work, the barriers she faces when using digital platforms, 
-    and the conditions needed for her to adopt new tools confidently and efficiently.
-  </p>
-</div>
+      <div class="empathy-objective">
+        <h4>Mario – Objective</h4>
+        <p>
+          Identify the technological and operational limitations faced by a rural teacher,
+          and adapt the platform to his available resources, teaching habits, and low-connectivity context.
+        </p>
+      </div>
 
-<img src="../assets/images/Laura.png" alt="LaurauserMap" class="empathy-img">
+      <img src="../assets/images/Mario.png" alt="MariouserMap" class="empathy-img">
 
 
-<div class="empathy-objective">
-  <h4>Mario – Objective</h4>
-  <p>
-    Identify the technological and operational limitations faced by a rural teacher, 
-    and adapt the platform to his available resources, teaching habits, and low-connectivity context.
-  </p>
-</div>
+      <div class="empathy-objective">
+        <h4>Daniela – Objective</h4>
+        <p>
+          Capture the emotions, frustrations, and digital habits of a student who needs visual clarity and accessible
+          navigation
+          to confidently learn and move through the platform using a mobile device.
+        </p>
+      </div>
+      <img src="../assets/images/Daniela.png" alt="DanielauserMap" class="empathy-img">
+    </div>
+ <!--User personas-->
+    <div class="project-description" id="user-personas">
+      <h3> User Personas</h3>
 
-<img src="../assets/images/Mario.png" alt="MariouserMap" class="empathy-img">
+      <p>
+        The goal of this section is to identify and represent the key profiles who interact with the Vermic Studios
+        educational platform, understanding their behaviors, needs, and pain points.
+      </p>
 
+      <p>
+        Through user personas, we aim to design more aligned solutions, avoiding generic assumptions and focusing on
+        those who actually experience the platform daily: teachers, students, and the editorial team.
+      </p>
 
-<div class="empathy-objective">
-  <h4>Daniela – Objective</h4>
-  <p>
-    Capture the emotions, frustrations, and digital habits of a student who needs visual clarity and accessible navigation 
-    to confidently learn and move through the platform using a mobile device.
-  </p>
-</div>
-<img src="../assets/images/Daniela.png" alt="DanielauserMap" class="empathy-img">
-</div>
+      <p>
+        These representations help us make informed design decisions, prioritize features, improve navigation, and adapt
+        the interface to different levels of understanding and context.
+      </p>
 
+      <p>
+        In this research phase, we created <strong>three main user personas</strong> representing the most active and
+        critical profiles within the Vermic Studios ecosystem:
+      </p>
 
+      <ul>
+        <li><strong>Teachers</strong>, who plan and adapt the content for their groups</li>
+        <li><strong>Students</strong>, who consume the content in various environments</li>
+        <li><strong>Editorial team</strong>, who manage and update materials in the platform</li>
+      </ul>
 
+      <p>
+        These user personas are important because they allow us to:
+      </p>
+      <ul>
+        <li><strong>Deeply understand</strong> key actors’ needs, frustrations, and goals</li>
+        <li><strong>Make informed design decisions</strong> based on real users</li>
+        <li><strong>Adapt language, UI, and flows</strong> to different digital experiences</li>
+        <li><strong>Visualize friction points</strong> and design tailored solutions for each profile</li>
+      </ul>
 
+      <p>
+        We identified common patterns among them that are essential for guiding the redesign of the platform:
+      </p>
 
+      <ul>
+        <li>Teachers seek efficiency, clarity, and control over the resources used in class.</li>
+        <li>Students need clear guidance, intuitive navigation, and a tone that fits their digital habits.</li>
+        <li>The editorial team (not visually represented) often struggles with keeping the platform updated, organizing
+          content by grade, and ensuring quality across profiles.</li>
+      </ul>
 
+      <p><strong>The most relevant needs found were:</strong></p>
+      <ul>
+        <li>Interface personalization by user type</li>
+        <li>Improved navigation and content structure</li>
+        <li>Immediate clarity on what to see, what to use, and how</li>
+        <li>Support for both printable and mobile-friendly formats</li>
+      </ul>
 
+      <p>
+        This analysis not only humanizes the data but also enables more empathetic and realistic design decisions. The
+        next steps in the project should focus on <strong>solutions tailored to each profile</strong>, minimizing
+        friction and maximizing clarity across different educational contexts.
+      </p>
 
+      <div class="user-personas-stack">
+        <img src="../assets/images/userpersona1.png" alt="User Persona 1" class="medium">
+        <img src="../assets/images/userpersona2.png" alt="User Persona 2" class="medium">
+        <img src="../assets/images/userpersona3.png" alt="User Persona 3" class="medium">
+        <img src="../assets/images/userpersona4.png" alt="User Persona Analysis Summary" class="medium">
+      </div>
 
+    </div>
+  </section>
 
-
-
-
-
-
-
-
-  <div class="project-description" id="user-personas">
-  <h3> User Personas</h3>
-
-  <p>
-    The goal of this section is to identify and represent the key profiles who interact with the Vermic Studios educational platform, understanding their behaviors, needs, and pain points.
-  </p>
-
-  <p>
-    Through user personas, we aim to design more aligned solutions, avoiding generic assumptions and focusing on those who actually experience the platform daily: teachers, students, and the editorial team.
-  </p>
-
-  <p>
-    These representations help us make informed design decisions, prioritize features, improve navigation, and adapt the interface to different levels of understanding and context.
-  </p>
-
-  <p>
-    In this research phase, we created <strong>three main user personas</strong> representing the most active and critical profiles within the Vermic Studios ecosystem:
-  </p>
-
-  <ul>
-    <li><strong>Teachers</strong>, who plan and adapt the content for their groups</li>
-    <li><strong>Students</strong>, who consume the content in various environments</li>
-    <li><strong>Editorial team</strong>, who manage and update materials in the platform</li>
-  </ul>
-
-  <p>
-    These user personas are important because they allow us to:
-  </p>
-  <ul>
-    <li><strong>Deeply understand</strong> key actors’ needs, frustrations, and goals</li>
-    <li><strong>Make informed design decisions</strong> based on real users</li>
-    <li><strong>Adapt language, UI, and flows</strong> to different digital experiences</li>
-    <li><strong>Visualize friction points</strong> and design tailored solutions for each profile</li>
-  </ul>
-
-  <p>
-    We identified common patterns among them that are essential for guiding the redesign of the platform:
-  </p>
-
-  <ul>
-    <li>Teachers seek efficiency, clarity, and control over the resources used in class.</li>
-    <li>Students need clear guidance, intuitive navigation, and a tone that fits their digital habits.</li>
-    <li>The editorial team (not visually represented) often struggles with keeping the platform updated, organizing content by grade, and ensuring quality across profiles.</li>
-  </ul>
-
-  <p><strong>The most relevant needs found were:</strong></p>
-  <ul>
-    <li>Interface personalization by user type</li>
-    <li>Improved navigation and content structure</li>
-    <li>Immediate clarity on what to see, what to use, and how</li>
-    <li>Support for both printable and mobile-friendly formats</li>
-  </ul>
-
-  <p>
-    This analysis not only humanizes the data but also enables more empathetic and realistic design decisions. The next steps in the project should focus on <strong>solutions tailored to each profile</strong>, minimizing friction and maximizing clarity across different educational contexts.
-  </p>
-
-<div class="user-personas-stack">
-  <img src="../assets/images/userpersona1.png" alt="User Persona 1" class="medium">
-  <img src="../assets/images/userpersona2.png" alt="User Persona 2" class="medium">
-  <img src="../assets/images/userpersona3.png" alt="User Persona 3" class="medium">
-  <img src="../assets/images/userpersona4.png" alt="User Persona Analysis Summary" class="medium">
-</div>
-
-</div>
-</section>
-
+  <!--====================================IDEATE=========================================================-->
 
   <section class="project-description" id="ideate">
     <h2>3. Ideate</h2>
     <p>Contenido sobre brainstorming, flujos, wireframes iniciales...</p>
   </section>
 
+  <!--======================================DESIGN=====================================================-->
+
   <section class="project-description" id="design">
-    <h2>4. Design</h2>
+    <h2>Design</h2>
     <p>Diseño de alta fidelidad, componentes UI, sistema visual...</p>
   </section>
+
+    <!--======================================PROTOTYPE=====================================================-->
 
   <section class="project-description" id="prototype">
     <h2>5. Prototype</h2>
     <p>Prototipado en Figma o herramienta, interacción, testable flow...</p>
   </section>
 
+    <!--=======================================TEST=====================================================-->
+
+  <section class="project-description" id="test">
+    <h2>6. Test</h2>
+    <p>
+      Validación de usabilidad con usuarios reales o simulados. Evaluación de flujos clave, detección de fricciones y
+      mejoras a partir del feedback. Se analizó eficiencia, comprensión y experiencia general.
+    </p>
+  </section>
+
+       <!--=======================================ITERATE=====================================================-->
+
   <section class="project-description" id="iterate">
-    <h2>6. Iterate</h2>
+    <h2> 7. Iterate</h2>
     <p>Testing, mejoras, feedback del cliente o usuarios reales...</p>
   </section>
 
 </body>
-
 </html>
