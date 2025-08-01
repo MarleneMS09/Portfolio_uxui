@@ -1,7 +1,7 @@
 
 
 /* =============================
-   🌍 RESET Y GLOBAL
+   RESET Y GLOBAL
    ============================= */
 html, body {
   max-width: 100vw;
@@ -14,7 +14,7 @@ html, body {
 }
 
 /* =============================
-   🔝 NAVBAR (espejo de pasos)
+   NAVBAR 
    ============================= */
 .mirror-navbar {
   position: fixed;
@@ -63,6 +63,71 @@ html, body {
   outline-offset: 4px;
   border-radius: 6px;
 }
+
+/* =============================
+   Button to UP
+   ============================= */
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 9999;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem; 
+}
+
+#scrollToTopBtn::before {
+  content: "";
+  font-size: 1.1rem; /* control de tamaño de flecha */
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+}
+
+
+
+#scrollToTopBtn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  background-color: var(--first-color-dark, #393a3b); 
+  opacity: 0.95;
+  color: white;
+}
+
+/* ==========Media Query (Button UP)========================= */
+@media (max-width: 480px) {
+  #scrollToTopBtn {
+    bottom: 1.2rem;
+    right: 0.6rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.85rem;
+    background-color: var(--first-color, #4A90E2);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    opacity: 1 !important;
+    border: 2px solid white;
+  }
+
+  #scrollToTopBtn::before {
+    font-size: 0.8rem;
+  }
+}
+
+
 
 /* =============================
    🏠 HERO
@@ -413,6 +478,3 @@ img.medium {
   }
 }
 
-/* =============================
-   ✅ FIN DEL CSS
-   ============================= */
